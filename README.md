@@ -1,3 +1,0 @@
-# Beta Website
-## jeffreyca.me
-
