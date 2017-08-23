@@ -11,25 +11,42 @@
     </head>
 
     <body>
-        <nav class="blue darken-4">
-            <div class="nav-wrapper">
-                <a href="./" class="brand-logo">Jeffrey Chen</a>
-                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="./ "><i class="material-icons ">home</i></a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="showcase.html">Showcase</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-nav">
-                    <!--Perhaps add account logo and name here-->
-                    <li><a href="./"><i class="material-icons">home</i>Home</a></li>
-                    <li><a href="projects.html"><i class="material-icons">work</i>Projects</a></li>
-                    <li><a href="showcase.html"><i class="material-icons">panorama</i>Showcase</a></li>
-                    <li class="active"><a href="contact.html"><i class="material-icons">email</i>Contact</a></li>
-                </ul>
+        <header>
+            <div class="navbar-fixed">
+                <nav class="blue darken-4">
+                    <div class="nav-wrapper">
+                        <a href="./" class="brand-logo">Jeffrey Chen</a>
+                        <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="./"><i class="material-icons">home</i></a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="showcase.html">Showcase</a></li>
+                            <li class="active"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </nav>
+            <ul class="side-nav" id="mobile-nav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="img/background.jpg">
+                        </div>
+                        <a href="#!user"><img class="circle" src="img/me.jpg"></a>
+                        <a href="#!name"><span class="white-text name">Jeffrey C (JeffreyCA)</span></a>
+                        <a href="#!email"><span class="white-text email">jeffreyca16@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a href="./"><i class="material-icons">home</i>Home</a></li>
+                <li><a class="waves-effect" href="projects.html"><i class="material-icons">work</i>Projects</a></li>
+                <li><a class="waves-effect" href="showcase.html"><i class="material-icons">panorama</i>Showcase</a></li>
+                <li class="active"><a class="waves-effect" href="contact.html"><i class="material-icons">email</i>Contact</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="waves-effect" id="about" href="#"><i class="material-icons">info</i>About</a></li>
+            </ul>
+        </header>
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
