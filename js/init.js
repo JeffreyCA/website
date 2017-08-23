@@ -6,4 +6,4 @@
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-$('#about').click(function () { Materialize.toast('Version 0.0.1', 2000); return false; });
+$('#about').click(function () { Materialize.toast('Last updated: 2017-08-22', 2000); return false; });
