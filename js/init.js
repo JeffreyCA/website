@@ -9,7 +9,7 @@
         });
 
         $('#about').click(function () {
-            Materialize.toast('Last updated: 2017-08-24', 2000);
+            Materialize.toast('Last updated: 2017-08-27', 2000);
             return false;
         });
     }); // end of document ready
