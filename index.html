@@ -5,8 +5,9 @@
     <title>Jeffrey Chen | Home</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
+    <!--Import materialize and materialize-social-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/materialize-social.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Various favicon stuff-->
@@ -79,22 +80,75 @@
             </div>
         </div>
 
+        <!-- Experience -->
+        <div class="row">
+            <div class="col s2 offset-s5">
+                <div class="card-panel blue darken-1">
+                    <span class="white-text">
+                        <h4 class="center-align">Experience</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Did you know? -->
         <div class="row">
             <div class="col s4 offset-s4">
                 <div class="card-panel grey darken-1">
                     <span class="white-text">
-                        <h4 class="center-align">Did you know...</h4>
-                        <p class="flow-text center-align">...this website was created using the <a href="http://materializecss.com/" class="pink-text text-lighten-4">Materialize</a> framework, which is based on Google's Material Design language?</p>
+                        <h4 class="center-align">Did you know?</h4>
+                        <p class="center-align">This website was created using the <a href="http://materializecss.com/" class="pink-text text-lighten-4">Materialize</a> framework, which is based on Google's Material Design language.</p>
                     </span>
+                    <p class="right-align" style="margin-top: 0px; margin-bottom: 0px;">
+                        <a class="btn-floating waves-effect white"><i class="material-icons grey-text text-darken-1">refresh</i></a>
+                    </p>
                 </div>
             </div>
         </div>
     </main>
 
+    <footer class="page-footer light-blue darken-4">
+        <div class="container">
+            <div class="row">
+                <!-- Single Column -->
+                <div class="col s12">
+                    <div class="center-align">
+                        <h5 class="white-text">Connect</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center-align">
+                    <a class="waves-effect waves-light btn-floating social google tooltipped" data-delay="100" data-tooltip="@gmail.com">
+                        <i class="fa fa-google"></i></a>
+
+                    <a class="waves-effect waves-light btn-floating social email tooltipped" data-delay="100" data-tooltip="@uwaterloo.ca">
+                        <i class="material-icons">school</i></a>
+
+                    <!--
+                        <a class="waves-effect waves-light btn-floating social email">
+                            <i class="fa fa-at"></i></a>
+                        -->
+                    <a class="waves-effect waves-light btn-floating social github tooltipped" data-delay="100" data-tooltip="GitHub">
+                        <i class="fa fa-github"></i></a>
+                    <a class="waves-effect waves-light btn-floating social linkedin tooltipped" data-delay="100" data-tooltip="LinkedIn">
+                        <i class="fa fa-linkedin"></i></a>
+                    <a class="waves-effect waves-light btn-floating social lastfm tooltipped" data-delay="100" data-tooltip="Last.fm">
+                        <i class="fa fa-lastfm"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Jeffrey Chen
+            </div>
+        </div>
+    </footer>
+
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
     <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="https://use.fontawesome.com/08271c50b1.js"></script>
 </body>
 
 </html>
