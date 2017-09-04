@@ -69,16 +69,6 @@
 .dropbox:hover {
   background-color: #309ff0 !important;
 }
-.email {
-  background-color: #ff9800;
-  color: #fff !important;
-}
-.email i {
-  color: #fff !important;
-}
-.email:hover {
-  background-color: #ffb74d !important;
-}
 .facebook {
   background-color: #3b5998;
   color: #fff !important;
@@ -248,6 +238,16 @@
 }
 .twitter:hover {
   background-color: #83c3f3 !important;
+}
+.uwaterloo {
+  background-color: #ff9800;
+  color: #fff !important;
+}
+.uwaterloo i {
+  color: #fff !important;
+}
+.uwaterloo:hover {
+  background-color: #ffb74d !important;
 }
 .vimeo {
   background-color: #1ab7ea;
