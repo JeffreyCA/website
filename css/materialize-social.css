@@ -100,7 +100,7 @@
   background-color: #fb799c !important;
 }
 .github {
-  background-color: #444444;
+  background-color: #444444 !important;
   color: #fff !important;
 }
 .github i {
@@ -110,7 +110,7 @@
   background-color: #5e5e5e !important;
 }
 .google {
-  background-color: #dd4b39;
+  background-color: #dd4b39 !important;
   color: #fff !important;
 }
 .google i {
@@ -130,7 +130,7 @@
   background-color: #548cb9 !important;
 }
 .lastfm {
-    background-color: #d22027;
+    background-color: #d22027 !important;
     color: #fff !important;
 }
 .lastfm i{
@@ -140,7 +140,7 @@
     background-color: #e8595e !important;
 }
 .linkedin {
-  background-color: #007bb6;
+  background-color: #007bb6 !important;
   color: #fff !important;
 }
 .linkedin i {
@@ -240,7 +240,7 @@
   background-color: #83c3f3 !important;
 }
 .uwaterloo {
-  background-color: #ff9800;
+  background-color: #ff9800 !important;
   color: #fff !important;
 }
 .uwaterloo i {
