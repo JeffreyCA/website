@@ -4,11 +4,6 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
-/* Custom Definitions */
-.blockquote-blue {
-  border-left-color: #01579b !important;
-}
-
 /* Default Definitions */
 .materialize-red {
   background-color: #e51c23 !important;
@@ -9392,4 +9387,20 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-width: 4;
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/
+}
+
+
+/* Custom Definitions */
+.blockquote-blue {
+  border-left-color: #01579b !important;
+}
+
+.chip > i {
+  height: 32px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+.chip {
+  margin-bottom: 10px;
 }
