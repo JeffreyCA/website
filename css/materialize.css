@@ -9778,6 +9778,10 @@ button.picker__close:focus {
     margin-bottom: 10px;
 }
 
+.chip.no-margin {
+    margin-bottom: 0px;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -9794,7 +9798,7 @@ main {
 
 /* Temporary workaround for bulleted lists */
 ul:not(.browser-default).bullet {
-	padding-left: 30px;
+	padding-left: 18px;
 	margin-top: 10px;
 	margin-bottom: 15px;
 }
