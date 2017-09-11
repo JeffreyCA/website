@@ -9764,23 +9764,8 @@ button.picker__close:focus {
 
 /* Custom Definitions */
 
-.blockquote-blue {
-    border-left-color: #01579b !important;
-}
 
-.chip>i {
-    height: 32px;
-    width: 24px;
-    border-radius: 50%;
-}
-
-.chip {
-    margin-bottom: 10px;
-}
-
-.chip.no-margin {
-    margin-bottom: 0px;
-}
+/* "Sticky" footers */
 
 body {
     display: flex;
@@ -9792,17 +9777,69 @@ main {
     flex: 1 0 auto;
 }
 
+.blockquote-blue {
+    border-left-color: #01579b !important;
+}
+
+.chip {
+    margin-bottom: 10px;
+}
+
+.chip>i {
+    height: 32px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.chip.no-margin {
+    margin-bottom: 0px;
+}
+
 .semibold {
     font-weight: 500;
 }
 
+.waves-effect.waves-dark .waves-ripple {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
 /* Temporary workaround for bulleted lists */
+
 ul:not(.browser-default).bullet {
-	padding-left: 18px;
-	margin-top: 10px;
-	margin-bottom: 15px;
+    padding-left: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 ul:not(.browser-default) li.bullet {
     list-style-type: disc;
+}
+
+
+/* For debugging purposes (Show droid on top)
+.card{
+    z-index: -1;
+}
+*/
+
+#easter {
+    display: inherit;
+}
+
+#easter:hover~.egg .droid {
+    -ms-transform: translate(40%, -40%) rotate(40deg);
+    -webkit-transform: translate(40%, -40%) rotate(40deg);
+    transform: translate(40%, -40%) rotate(40deg);
+}
+
+.droid {
+    margin-left: 15%;
+    margin-top: -100%;
+    margin-bottom: 21%;
+    -ms-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    transition: all 1s;
+    -webkit-transition: all 1s;
 }

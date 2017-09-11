@@ -6,9 +6,9 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import CSS resources -->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/materialize-social.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/font-awesome.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/css/materialize-social.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/css/font-awesome.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Various favicon stuff-->
@@ -28,13 +28,13 @@
             <nav class="light-blue darken-4">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a href="./" class="brand-logo truncate">Jeffrey Chen</a>
+                        <a href="/" class="brand-logo truncate">Jeffrey Chen</a>
                         <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li class="active"><a href="./"><i class="material-icons">home</i></a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="showcase.html">Showcase</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="active"><a href="/"><i class="material-icons">home</i></a></li>
+                            <li><a href="/projects.html">Projects</a></li>
+                            <li><a href="/showcase.html">Showcase</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -45,17 +45,17 @@
             <li>
                 <div class="user-view">
                     <div class="background">
-                        <img src="img/background.jpg">
+                        <img src="/img/background.jpg">
                     </div>
-                    <a href="#!user"><img class="circle" src="img/me.jpg"></a>
+                    <a href="#!user"><img class="circle" src="/img/me.jpg"></a>
                     <a href="#!name"><span class="white-text name">Jeffrey C (JeffreyCA)</span></a>
                     <a href="#!email"><span class="white-text email">jeffreyca16@gmail.com</span></a>
                 </div>
             </li>
             <li class="active"><a href="javascript:void(0)"><i class="material-icons">home</i>Home</a></li>
-            <li><a class="waves-effect" href="projects.html"><i class="material-icons">work</i>Projects</a></li>
-            <li><a class="waves-effect" href="showcase.html"><i class="material-icons">panorama</i>Showcase</a></li>
-            <li><a class="waves-effect" href="contact.html"><i class="material-icons">email</i>Contact</a></li>
+            <li><a class="waves-effect" href="/projects.html"><i class="material-icons">work</i>Projects</a></li>
+            <li><a class="waves-effect" href="/showcase.html"><i class="material-icons">panorama</i>Showcase</a></li>
+            <li><a class="waves-effect" href="/contact.html"><i class="material-icons">email</i>Contact</a></li>
             <li>
                 <div class="divider"></div>
             </li>
@@ -74,7 +74,7 @@
 
                             <p>I am a software developer who loves making applications for mobile platforms like Android and iOS. Be sure to check out my latest Android app, <a href="https://play.google.com/store/apps/details?id=ca.jeffrey.apodgallery" class="orange-text text-lighten-4">APOD Gallery</a>.</p>
 
-                            <p>I am open to new ideas and suggestions for future projects. Feel free to <a href="contact.html" class="orange-text text-lighten-4">contact me</a>!</p>
+                            <p>I am open to new ideas and suggestions for future projects. Feel free to <a href="/contact.html" class="orange-text text-lighten-4">contact me</a>!</p>
                     </span>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                         <div class="card hoverable">
                             <!-- Logo -->
                             <div class="card-image green">
-                                <img src="img/td.svg" class="responsive-img center-align" alt="TD Bank Group Logo">
+                                <img src="/img/td.svg" class="responsive-img center-align" alt="TD Bank Group Logo">
                             </div>
 
                             <!-- Name -->
@@ -118,14 +118,14 @@
 
                     <!-- Job details -->
                     <div class="col l5 m7 s12">
-                        <div class="card hoverable green lighten-1" id="android-egg">
+                        <div class="card hoverable green lighten-1 waves-effect waves-light" id="easter">
                             <!-- Title -->
-                            <!-- TODO: Easter egg: click card to reveal Android robot -->
                             <div class="card-content">
                                 <span class="card-title white-text">
                                     <h5 class="center-align">Android Application Developer</h5>
                                 </span>
 
+                                <!-- Bullet points -->
                                 <span class="white-text">
                                     <ul class="bullet">
                                         <li class="bullet">Blah</li>
@@ -134,11 +134,15 @@
                                     </ul>
                                 </span>
 
-                                <div>
-                                    <div class="white chip no-margin waves-effect black-text">Toronto, ON</div>
-                                    <div class="white chip no-margin waves-effect black-text right">Fall 2017</div>
-                                </div>
+                                <!-- Date and location chips -->
+                                <div class="white chip no-margin waves-effect waves-dark black-text">Toronto, ON</div>
+                                <div class="white chip no-margin waves-effect waves-dark black-text right">Fall 2017</div>
                             </div>
+                        </div>
+
+                        <!-- 🥚 -->
+                        <div class="egg right">
+                            <object class="droid" width="180px" type="image/svg+xml" data="/img/android.svg" />
                         </div>
                     </div>
                 </div>
@@ -223,9 +227,9 @@
     </footer>
 
     <!-- Import JavaScript resources -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/materialize.js"></script>
+    <script type="text/javascript" src="/js/init.js"></script>
 </body>
 
 </html>
