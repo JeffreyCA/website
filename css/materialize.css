@@ -9795,8 +9795,8 @@ main {
     margin-bottom: 0px;
 }
 
-.semibold {
-    font-weight: 500;
+.card-title.semibold {
+    font-weight: 400;
 }
 
 .waves-effect.waves-dark .waves-ripple {
@@ -9842,4 +9842,8 @@ ul:not(.browser-default) li.bullet {
     transform: rotate(40deg);
     transition: all 1s;
     -webkit-transition: all 1s;
+}
+
+.row.playstore {
+    margin-bottom: 0;
 }
