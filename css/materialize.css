@@ -9847,3 +9847,15 @@ ul:not(.browser-default) li.bullet {
 .row.playstore {
     margin-bottom: 0;
 }
+
+ .slider .slides {
+    background-color: transparent;
+}
+
+.slider .slides li img {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+}
