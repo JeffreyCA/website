@@ -9860,9 +9860,8 @@ ul:not(.browser-default) li.bullet {
     max-height: 100%;
 }
 
-.vert {
-    position: relative;
-    transform: translateY(25%);
+.no-margin {
+    margin: 0 !important;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
