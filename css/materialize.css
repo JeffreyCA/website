@@ -9761,12 +9761,9 @@ button.picker__close:focus {
     /*shape-rendering: crispEdges;*/
 }
 
-
 /* Custom Definitions */
 
-
 /* "Sticky" footers */
-
 body {
     display: flex;
     min-height: 100vh;
@@ -9803,9 +9800,7 @@ main {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-
-/* Temporary workaround for bulleted lists */
-
+/* Workaround for bulleted lists */
 ul:not(.browser-default).bullet {
     padding-left: 18px;
     margin-top: 10px;
@@ -9815,16 +9810,13 @@ ul:not(.browser-default).bullet {
 ul:not(.browser-default) li.bullet {
     list-style-type: disc;
 }
-
-
-/* For debugging purposes (Show droid on top)
-.card{
-    z-index: -1;
+li.bullet {
+    margin: 0.5em 0;
 }
-*/
 
 #easter {
     display: inherit;
+    z-index: 2;
 }
 
 #easter:hover~.egg .droid {
@@ -9834,9 +9826,9 @@ ul:not(.browser-default) li.bullet {
 }
 
 .droid {
-    margin-left: 15%;
-    margin-top: -100%;
-    margin-bottom: 21%;
+    margin-left: 15%; /* margin-left: 15%; */
+    margin-bottom: 70%; /* margin-bottom: 21%; */
+    margin-top: -400%; /* margin-top: -100%; */
     -ms-transform: rotate(40deg);
     -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
@@ -9862,6 +9854,10 @@ ul:not(.browser-default) li.bullet {
 
 .no-margin {
     margin: 0 !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
