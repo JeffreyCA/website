@@ -17,6 +17,10 @@ function formatDate(date) {
             closeOnClick: true
         });
 
+        $('.user-view').click(function () {
+            $('.button-collapse').sideNav('hide');
+        })
+
         $('#about').click(function () {
             var formattedDate = formatDate(new Date(document.lastModified));
             Materialize.toast('Last updated: ' + formattedDate, 2000);
