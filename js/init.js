@@ -26,16 +26,5 @@ function formatDate(date) {
             Materialize.toast('Last updated: ' + formattedDate, 2000);
             return false;
         });
-
-        $("#android-egg").hover(
-            // Mouse hover
-            function () {
-
-            },
-            // Mouse leave
-            function () {
-
-            }
-        );
     }); // end of document ready
 })(jQuery); // end of jQuery name space

@@ -9997,4 +9997,21 @@ if (jQuery) {
 
     $.error('Method ' + methodOrOptions + ' does not exist on jQuery.tap-target');
   };
+    /* Custom Definitions */
+    Materialize.fadeInCard = function (selectorOrEl) {
+    var element;
+    if (typeof selectorOrEl === 'string') {
+      element = $(selectorOrEl);
+    } else if (typeof selectorOrEl === 'object') {
+      element = selectorOrEl;
+    } else {
+      return;
+    }
+    element.css({ opacity: 0 });
+    $(element).velocity({ opacity: 1 }, {
+      duration: 500,
+      queue: false,
+      easing: 'easeInQuad'
+    });
+    };
 })(jQuery);
