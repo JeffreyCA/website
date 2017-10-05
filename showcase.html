@@ -12,12 +12,12 @@
         };
         gtag('js', new Date());
         gtag('config', 'UA-106982953-1');
-
     </script>
     <title>Jeffrey Chen | Showcase</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import CSS resources -->
+    <link type="text/css" rel="stylesheet" href="/css/cocoen.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="/css/materialize-social.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="/css/font-awesome.css" media="screen,projection" />
@@ -89,7 +89,6 @@
 
     <main>
         <div class="container">
-
             <div class="row">
                 <div class="col l8 offset-l2 m10 offset-m1 s12 asdf">
                     <div id="gallery-info" class="card-panel blue">
@@ -113,22 +112,14 @@
                 <div class="col l4 m6 s12 gallery-item gallery-filter 3d">
                     <div class="card">
                         <div class="card-image">
-                            <img class="materialboxed" src="/img/showcase/3d/rocketship.jpg">
-                        </div>
-                        <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text text-darken-2" href="https://www.tinkercad.com/things/ldGJq7idP7n-rocketship/">TinkerCAD</a>
-                            <a class="grey-text text-darken-2" href="https://www.tinkercad.com/things/ldGJq7idP7n-rocketship/">.STL</a>
-                            <a class="grey-text text-darken-2" href="https://www.tinkercad.com/things/ldGJq7idP7n-rocketship/">.OBJ</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col l4 m6 s12 gallery-item gallery-filter 3d">
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="materialboxed" src="/img/showcase/3d/rocketship-model.jpg">
+                            <div class="cocoen">
+                                <img src="/img/showcase/3d/rocketship-cad.jpg" alt="">
+                                <img src="/img/showcase/3d/rocketship-actual.jpg" alt="">
+
+
+
+                            </div>
+                            <!-- <img class="materialboxed" src="/img/showcase/3d/rocketship.jpg"> -->
                         </div>
                         <div class="card-content">
                             <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -243,7 +234,10 @@
                 <div class="col l4 m6 s12 gallery-item gallery-filter fine130 mod5">
                     <div class="card">
                         <div class="card-image">
-                            <img class="materialboxed" src="/img/showcase/fine130/Mod5_j_chen_before.jpg">
+                            <div class="cocoen">
+                                <img src="/img/showcase/fine130/Mod5_j_chen_before.jpg" alt="">
+                                <img src="/img/showcase/fine130/Mod5_j_chen_after.jpg" alt="">
+                            </div>
                             <span class="card-title">Card Title</span>
                         </div>
                         <div class="card-content">
@@ -251,17 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l4 m6 s12 gallery-item gallery-filter fine130 mod5">
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="materialboxed" src="/img/showcase/fine130/Mod5_j_chen_after.jpg">
-                            <span class="card-title">Card Title</span>
-                        </div>
-                        <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col l4 m6 s12 gallery-item gallery-filter fine130 mod6">
                     <div class="card">
                         <div class="card-image">
@@ -367,9 +351,11 @@
     <!-- Import JavaScript resources -->
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/cocoen.js"></script>
+    <script type="text/javascript" src="/js/cocoen-jquery.js"></script>
     <script type="text/javascript" src="/js/materialize.js"></script>
     <script type="text/javascript" src="/js/init-showcase.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 </body>
 
 </html>

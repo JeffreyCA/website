@@ -13,6 +13,8 @@ function formatDate(date) {
 
 (function ($) {
     $(function () {
+        $('.cocoen').cocoen();
+
         $('.button-collapse').sideNav({
             closeOnClick: true
         });

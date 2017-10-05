@@ -9893,6 +9893,10 @@ nav .categories-wrapper .categories-container .categories > li {
 
 .card .card-image img {
     margin: 0.5rem 0 1rem 0;
+    position:static;
+}
+
+.cocoen img {
 }
 
 /* GALLERY */
