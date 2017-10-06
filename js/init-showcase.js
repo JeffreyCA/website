@@ -73,7 +73,7 @@ function formatDate(date) {
                     }
 
                     if (hash === 'all') {
-                        changeInfo("This is my gallery...");
+                        changeInfo("Welcome to my Showcase! Here you can find digital media that I created, featuring some 3D print models and artworks I made for FINE 130, a digital imaging course that I took in Spring 2017. Click through the tabs to filter media by category. I categorized my FINE 130 works by course modules. Enjoy!");
                     } else if (hash === '3d') {
                         changeInfo("3D models");
                     } else if (hash === 'fine130') {
