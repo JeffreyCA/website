@@ -9896,8 +9896,19 @@ nav .categories-wrapper .categories-container .categories > li {
     position:static;
 }
 
-.cocoen img {
+.card-image .card-title {
+    text-shadow: 1px 1px 2px rgba(50, 50, 50, 1);
+    font-style: italic;
 }
+
+.no-italic {
+    font-style: normal !important;
+}
+
+.no-shadow {
+    text-shadow: none !important;
+}
+
 
 /* GALLERY */
 .gallery {
@@ -10079,4 +10090,3 @@ nav .categories-wrapper .categories-container .categories > li {
   transition: transform 0.4s cubic-bezier(0.53, 0.01, 0.36, 1.63), box-shadow 0.3s;
   transition: transform 0.4s cubic-bezier(0.53, 0.01, 0.36, 1.63), box-shadow 0.3s, -webkit-transform 0.4s cubic-bezier(0.53, 0.01, 0.36, 1.63);
 }
-

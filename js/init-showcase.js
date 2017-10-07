@@ -13,8 +13,6 @@ function formatDate(date) {
 
 (function ($) {
     $(function () {
-        $('.cocoen').cocoen();
-
         $('.button-collapse').sideNav({
             closeOnClick: true
         });
@@ -73,27 +71,27 @@ function formatDate(date) {
                     }
 
                     if (hash === 'all') {
-                        changeInfo("Welcome to my Showcase! Here you can find digital media that I created, featuring some 3D print models and artworks I made for FINE 130, a digital imaging course that I took in Spring 2017. Click through the tabs to filter media by category. I categorized my FINE 130 works by course modules. Enjoy!");
+                        changeInfo("Welcome to my Showcase! Here you can find digital media that I created, featuring some 3D print models and artworks I made for FINE 130, a digital imaging course that I took in Spring 2017. Click through the tabs to filter media by category. FINE 130 works are categorized by course modules. Enjoy!");
                     } else if (hash === '3d') {
-                        changeInfo("3D models");
+                        changeInfo("These are some models I designed for 3D printing using CAD software. I also printed them out myself using a CubePro.");
                     } else if (hash === 'fine130') {
-                        changeInfo("Collection from FINE 130 course I took in Spring 2017");
+                        changeInfo("These are works I made for FINE 130: Digital Imaging, which I took online in Spring 2017. It was a very fun and enjoyable fine arts course. The course was divided into 8 modules, each focusing on a different approach to expressing oneself through digital media. Click each tab to view more information about the featured works. All works shown were created using Adobe Photoshop.");
                     } else if (hash === 'mod1') {
-                        changeInfo("FINE 130 - Module 1: ");
+                        changeInfo("FINE 130 Module 1: Collage Reveal and Conceal");
                     } else if (hash === 'mod2') {
-                        changeInfo("FINE 130 - Module 2:");
+                        changeInfo("FINE 130 Module 2: Phony Photograms");
                     } else if (hash === 'mod3') {
-                        changeInfo("FINE 130 - Module 3:");
+                        changeInfo("FINE 130 Module 3: Spatial Arrangements");
                     } else if (hash === 'mod4') {
-                        changeInfo("FINE 130 - Module 4:");
+                        changeInfo("FINE 130 Module 4: The Power of Type");
                     } else if (hash === 'mod5') {
-                        changeInfo("FINE 130 - Module 5:");
+                        changeInfo("FINE 130 Module 5: Culture Jamming");
                     } else if (hash === 'mod6') {
-                        changeInfo("FINE 130 - Module 6:");
+                        changeInfo("FINE 130 Module 6: Social and Political Activism");
                     } else if (hash === 'mod7') {
-                        changeInfo("FINE 130 - Module 7:");
+                        changeInfo("FINE 130 Module 7: Self Portraiture");
                     } else if (hash === 'mod8') {
-                        changeInfo("FINE 130 - Module 8:");
+                        changeInfo("FINE 130 Module 8: Plugged (or Unplugged)?");
                     }
 
                     console.log(hash);
@@ -110,10 +108,12 @@ function formatDate(date) {
             // no transitions
             transitionDuration: 0
         });
-        // layout Masonry after each image loads
+        // Start Masonry and Cocoen after all images are loaded
         $masonry.imagesLoaded(function () {
             $masonry.masonry('layout');
+            $('.cocoen').cocoen();
         });
+
         $('a.filter').click(function (e) {
             e.preventDefault();
         });
