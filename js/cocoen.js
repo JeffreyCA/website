@@ -55,7 +55,7 @@
                 }(),
                 o = function () {
                     function e(t, n) {
-                        i(this, e), this.options = s({}, e.defaults, n), this.element = t || document.querySelector(".cocoen"), this.init()
+                        i(this, e), this.options = s({}, e.defaults, n), this.element = t || document.querySelector(".cocoen, .cocoen1"), this.init()
                     }
                     return r(e, [{
                         key: "init",

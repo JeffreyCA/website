@@ -28,7 +28,6 @@ function formatDate(date) {
         });
 
         // Navbar
-        $(".button-collapse").sideNav();
         var categories = $('nav .categories-container');
         if (categories.length) {
             categories.pushpin({
@@ -93,8 +92,6 @@ function formatDate(date) {
                     } else if (hash === 'mod8') {
                         changeInfo("FINE 130 Module 8: Plugged (or Unplugged)?");
                     }
-
-                    console.log(hash);
                 });
             });
         }
@@ -108,10 +105,13 @@ function formatDate(date) {
             // no transitions
             transitionDuration: 0
         });
+
         // Start Masonry and Cocoen after all images are loaded
         $masonry.imagesLoaded(function () {
-            $masonry.masonry('layout');
             $('.cocoen').cocoen();
+            $masonry.masonry('layout');
+            $('.cocoen1').cocoen();
+            $masonry.masonry('layout');
         });
 
         $('a.filter').click(function (e) {
