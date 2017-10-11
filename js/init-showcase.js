@@ -69,6 +69,7 @@ function formatDate(date) {
                         $("#gallery-info span").text(text);
                     }
 
+                    // Change Showcase description text
                     if (hash === 'all') {
                         changeInfo("Welcome to my Showcase! Here you can find digital media works that I created, featuring some 3D print models and images I put together for FINE 130, a digital imaging course that I took in Spring 2017. FINE 130 images are also categorized by course modules. Click through the tabs above to filter by category. Enjoy!");
                     } else if (hash === '3d') {
@@ -98,18 +99,15 @@ function formatDate(date) {
 
         var $masonry = $('.gallery');
         $masonry.masonry({
-            // set itemSelector so .grid-sizer is not used in layout
             itemSelector: '.gallery-filter',
-            // use element for option
             columnWidth: '.gallery-filter',
-            // no transitions
             transitionDuration: 0
         });
 
         // Start Masonry and Cocoen after all images are loaded
         $masonry.imagesLoaded(function () {
             $('.cocoen').cocoen();
-            $masonry.masonry('layout');
+            $masonry.masonry('layout'); // Workaround for slider getting stuck
             $('.cocoen1').cocoen();
             $masonry.masonry('layout');
         });
