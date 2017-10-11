@@ -70,11 +70,11 @@ function formatDate(date) {
                     }
 
                     if (hash === 'all') {
-                        changeInfo("Welcome to my Showcase! Here you can find digital media that I created, featuring some 3D print models and artworks I made for FINE 130, a digital imaging course that I took in Spring 2017. Click through the tabs to filter media by category. FINE 130 works are categorized by course modules. Enjoy!");
+                        changeInfo("Welcome to my Showcase! Here you can find digital media works that I created, featuring some 3D print models and images I put together for FINE 130, a digital imaging course that I took in Spring 2017. FINE 130 images are also categorized by course modules. Click through the tabs above to filter by category. Enjoy!");
                     } else if (hash === '3d') {
                         changeInfo("These are some models I designed for 3D printing using CAD software. I also printed them out myself using a CubePro.");
                     } else if (hash === 'fine130') {
-                        changeInfo("These are works I made for FINE 130: Digital Imaging, which I took online in Spring 2017. It was a very fun and enjoyable fine arts course. The course was divided into 8 modules, each focusing on a different approach to expressing oneself through digital media. Click each tab to view more information about the featured works. All works shown were created using Adobe Photoshop.");
+                        changeInfo("These are works I made for FINE 130: Digital Imaging, which I took online in Spring 2017. It was a very fun and enjoyable fine arts course. The course was divided into 8 modules, each focusing on a different aspect of digital media. Click each tab to view more information about the featured works. All works shown were created using Adobe Photoshop.");
                     } else if (hash === 'mod1') {
                         changeInfo("FINE 130 Module 1: Collage Reveal and Conceal");
                     } else if (hash === 'mod2') {
