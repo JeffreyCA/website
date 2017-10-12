@@ -49,11 +49,11 @@ function formatDate(date) {
                         $galleryFilteredOut.removeClass('gallery-filter').hide();
                     }
 
-                    // transition layout
+                    // Transition layout
                     $masonry.masonry({
                         transitionDuration: '.5s'
                     });
-                    // only animate on layout
+                    // Only animate on layout
                     $masonry.one('layoutComplete', function (event, items) {
                         $masonry.masonry({
                             transitionDuration: 0
@@ -107,7 +107,8 @@ function formatDate(date) {
         // Start Masonry and Cocoen after all images are loaded
         $masonry.imagesLoaded(function () {
             $('.cocoen').cocoen();
-            $masonry.masonry('layout'); // Workaround for slider getting stuck
+            // Workaround for slider getting stuck
+            $masonry.masonry('layout');
             $('.cocoen1').cocoen();
             $masonry.masonry('layout');
         });
