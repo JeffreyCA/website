@@ -1,224 +1,279 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Jeffrey Chen | Projects</title>
+        <meta name="description" content="Jeffrey Chen. View personal projects ranging from mobile applications to web extensions.">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import CSS resources -->
+        <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="/css/materialize-social.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="/css/font-awesome.css" media="screen,projection" />
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Various favicon stuff-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/manifest.json">
+        <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+        <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#01579b">
+    </head>
 
-<head>
-    <title>Jeffrey Chen | Projects</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import CSS resources -->
-    <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="/css/materialize-social.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="/css/font-awesome.css" media="screen,projection" />
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Various favicon stuff-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/manifest.json">
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
-    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#01579b">
-</head>
-
-<body>
-    <header>
-        <div class="navbar-fixed">
-            <nav class="light-blue darken-4">
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a href="/" class="brand-logo truncate">Jeffrey Chen</a>
-                        <a href="javascript:void(0)" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="/"><i class="material-icons">home</i></a></li>
-                            <li class="active"><a href="javascript:void(0)">Projects</a></li>
-                            <li><a href="/showcase.html">Showcase</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- Mobile Navigation -->
-        <ul class="side-nav" id="mobile-nav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="/img/background.jpg">
-                    </div>
-                    <a href="#!user"><img class="circle" src="/img/me.jpg"></a>
-                    <a href="#!name"><span class="white-text name">Jeffrey C (JeffreyCA)</span></a>
-                    <a href="#!email"><span class="white-text email">jeffreyca16@gmail.com</span></a>
-                </div>
-            </li>
-            <li><a href="/"><i class="material-icons">home</i>Home</a></li>
-            <li class="active"><a class="waves-effect" href="javascript:void(0)"><i class="material-icons">work</i>Projects</a></li>
-            <li><a class="waves-effect" href="/showcase.html"><i class="material-icons">panorama</i>Showcase</a></li>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li><a class="waves-effect" id="about" href="javascript:void(0)"><i class="material-icons">info</i>About</a></li>
-        </ul>
-    </header>
-
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col m10 offset-m1 s12 hide-on-large-only">
-                    <div class="card-panel purple lighten-1">
-                        <span class="white-text">
-                                <h4 class="center-align">Projects</h4>
-                            </span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- APOD Gallery -->
-                <div class="col l8 offset-l2 m10 offset-m1 s12">
-                    <div class="card indigo darken-2">
-                        <!-- Featured image -->
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="/img/apod/banner.jpg">
-                        </div>
-                        <!-- Brief summary -->
-                        <div class="card-content">
-                            <span class="card-title activator white-text semibold">APOD Gallery<i class="material-icons right">more_vert</i></span>
-                            <p class="white-text">APOD Gallery is an Android application that lets users to explore the images and videos from NASA's Astronomy Picture of the Day (APOD) service.</p>
-                        </div>
-                        <!-- Detailed description -->
-                        <div class="card-reveal">
-                            <span class="card-title activator grey-text darken-3 text-darken-4 semibold">APOD Gallery<i class="material-icons right">close</i></span>
-                            <p>Features:</p>
-                            <ul class="bullet">
-                                <li class="bullet">Native Android application, written in pure Java and XML and uses elements of Material Design</li>
-                                <li class="bullet">Uses NASA's Astronomy Picture of the Day (APOD) API to retrieve image data and descriptions dating back all the way to 1995</li>
-                                <li class="bullet">Automates phone wallpaper changes daily, powered by Firebase and a Python script which updates the database every time there is a new image</li>
-                                <li class="bullet">Scrollable launcher widget to browse through saved images</li>
-                                <li class="bullet">Fullscreen image view to pan and zoom content</li>
-                                <li class="bullet">Intuitive controls such as: swipe to navigate between pictures, slideable view to bring up descriptions, and date picker to refine selection</li>
+    <body>
+        <header>
+            <div class="navbar-fixed">
+                <nav class="light-blue darken-4">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="/" class="brand-logo truncate">Jeffrey Chen</a>
+                            <a href="javascript:void(0)" data-activates="mobile-nav" class="button-collapse">
+                                <i class="material-icons">menu</i>
+                            </a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li>
+                                    <a href="/">
+                                        <i class="material-icons">home</i>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="/showcase.html">Showcase</a>
+                                </li>
                             </ul>
                         </div>
-                        <!-- Google Play badge -->
-                        <div class="card-action">
-                            <div class="row playstore">
-                                <div class="col l3 m4 s6">
-                                    <a href='https://play.google.com/store/apps/details?id=ca.jeffrey.apodgallery&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img class="responsive-img" alt='Get it on Google Play' src='/svg/playstore-badge.svg' /></a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
+                </nav>
             </div>
-            <!-- UW Pretty Schedule -->
-            <div class="row">
-                <div class="col l4 offset-l2 m10 offset-m1 s12">
-                    <div class="card yellow darken-2">
-                        <div class="card-content white-text">
-                            <span class="card-title white-text semibold">UW Pretty Schedule</span>
-                            <p>A Chrome extension that brings an intuitive and clean look to UWaterloo's Schedule of Classes site.</p>
+            <!-- Mobile Navigation -->
+            <ul class="side-nav" id="mobile-nav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="/img/background.jpg">
                         </div>
-                        <div class="card-action">
-                            <div class="row playstore valign-wrapper">
-                                <!-- Chrome store -->
-                                <div class="col l6 m4 s6 no-margin">
-                                    <a href="https://chrome.google.com/webstore/detail/pretty-uw-course-schedule/gilgimlfokldlkkejocbdefeoipphcpc"><img class="responsive-img" alt='Get it on Chrome Web Store' src='/svg/webstore.svg' /></a>
-                                </div>
-                                <!-- GitHub -->
-                                <div class="col l2 m1 offset-m7 s2">
-                                    <a href="https://github.com/JeffreyCA/PrettyUWCourseSchedule"><img class="responsive-img tooltipped" data-delay="50" data-tooltip="View on GitHub" alt='View on GitHub' src='/svg/github.svg' /></a>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="#!user">
+                            <img class="circle" src="/img/me.jpg">
+                        </a>
+                        <a href="#!name">
+                            <span class="white-text name">Jeffrey C (JeffreyCA)</span>
+                        </a>
+                        <a href="#!email">
+                            <span class="white-text email">jeffreyca16@gmail.com</span>
+                        </a>
                     </div>
-                </div>
-                <!-- WatCard Libraries -->
-                <div class="col l4 m10 offset-m1 s12">
-                    <div class="card teal lighten-2">
-                        <div class="card-content white-text">
-                            <span class="card-title semibold">WatCard-Android/Java</span>
-                            <p>Standard Java and Android libraries for retrieving UWaterloo meal plan financial data. Compatible with Maven and Gradle build tools.</p>
-                        </div>
-                        <div class="card-action">
-                            <a class="grey-text text-lighten-3" href="https://github.com/JeffreyCA/watcard-java-api">Java</a>
-                            <a class="grey-text text-lighten-3 right no-margin" href="https://github.com/JeffreyCA/watcard-android">Android</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Coming soon... -->
-            <div class="row">
-                <div class="col l8 offset-l2 m10 offset-m1 s12">
-                    <div class="card black">
-                        <!-- Featured image -->
-                        <div class="card-image">
-                            <img class="materialboxed" src="/img/coming-soon.jpg">
-                        </div>
-                        <!-- Brief summary -->
-                        <div class="card-content">
-                            <span class="card-title white-text semibold"></span>
-                            <p class="white-text"></p>
-                        </div>
-                        <!-- App Store badge -->
-                        <div class="card-action">
-                            <div class="row playstore valign-wrapper">
-                                <!-- Chrome store -->
-                                <div class="col l6 m4 s6 no-margin">
-                                    <a href="javascript:void(0)"><img class="responsive-img" alt='Coming soon to App Store' src='/svg/appstore.svg' /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+                </li>
+                <li>
+                    <a href="/">
+                        <i class="material-icons">home</i>Home</a>
+                </li>
+                <li class="active">
+                    <a class="waves-effect" href="javascript:void(0)">
+                        <i class="material-icons">work</i>Projects</a>
+                </li>
+                <li>
+                    <a class="waves-effect" href="/showcase.html">
+                        <i class="material-icons">panorama</i>Showcase</a>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a class="waves-effect" id="about" href="javascript:void(0)">
+                        <i class="material-icons">info</i>About</a>
+                </li>
+            </ul>
+        </header>
 
-    <!-- Footer -->
-    <footer class="page-footer light-blue darken-4">
-        <div class="container">
-            <div class="row">
-                <!-- Single Column -->
-                <div class="col s12">
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col m10 offset-m1 s12 hide-on-large-only">
+                        <div class="card-panel purple lighten-1">
+                            <span class="white-text">
+                                <h4 class="center-align">Projects</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- APOD Gallery -->
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card indigo darken-2">
+                            <!-- Featured image -->
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="/img/apod/banner.jpg">
+                            </div>
+                            <!-- Brief summary -->
+                            <div class="card-content">
+                                <span class="card-title activator white-text semibold">APOD Gallery
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p class="white-text">APOD Gallery is an Android application that lets users to explore the images and videos from
+                                    NASA's Astronomy Picture of the Day (APOD) service.</p>
+                            </div>
+                            <!-- Detailed description -->
+                            <div class="card-reveal">
+                                <span class="card-title activator grey-text darken-3 text-darken-4 semibold">APOD Gallery
+                                    <i class="material-icons right">close</i>
+                                </span>
+                                <p>Features:</p>
+                                <ul class="bullet">
+                                    <li class="bullet">Native Android application, written in pure Java and XML and uses elements of Material
+                                        Design
+                                    </li>
+                                    <li class="bullet">Uses NASA's Astronomy Picture of the Day (APOD) API to retrieve image data and descriptions
+                                        dating back all the way to 1995</li>
+                                    <li class="bullet">Automates phone wallpaper changes daily, powered by Firebase and a Python script which
+                                        updates the database every time there is a new image</li>
+                                    <li class="bullet">Scrollable launcher widget to browse through saved images</li>
+                                    <li class="bullet">Fullscreen image view to pan and zoom content</li>
+                                    <li class="bullet">Intuitive controls such as: swipe to navigate between pictures, slideable view to bring
+                                        up descriptions, and date picker to refine selection</li>
+                                </ul>
+                            </div>
+                            <!-- Google Play badge -->
+                            <div class="card-action">
+                                <div class="row playstore">
+                                    <div class="col l3 m4 s6">
+                                        <a href='https://play.google.com/store/apps/details?id=ca.jeffrey.apodgallery&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                                            <img class="responsive-img" alt='Get it on Google Play' src='/svg/playstore-badge.svg' />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- UW Pretty Schedule -->
+                <div class="row">
+                    <div class="col l4 offset-l2 m10 offset-m1 s12">
+                        <div class="card yellow darken-2">
+                            <div class="card-content white-text">
+                                <span class="card-title white-text semibold">UW Pretty Schedule</span>
+                                <p>A Chrome extension that brings an intuitive and clean look to UWaterloo's Schedule of Classes
+                                    site.
+                                </p>
+                            </div>
+                            <div class="card-action">
+                                <div class="row playstore valign-wrapper">
+                                    <!-- Chrome store -->
+                                    <div class="col l6 m4 s6 no-margin">
+                                        <a href="https://chrome.google.com/webstore/detail/pretty-uw-course-schedule/gilgimlfokldlkkejocbdefeoipphcpc">
+                                            <img class="responsive-img" alt='Get it on Chrome Web Store' src='/svg/webstore.svg' />
+                                        </a>
+                                    </div>
+                                    <!-- GitHub -->
+                                    <div class="col l2 m1 offset-m7 s2">
+                                        <a href="https://github.com/JeffreyCA/PrettyUWCourseSchedule">
+                                            <img class="responsive-img tooltipped" data-delay="50" data-tooltip="View on GitHub" alt='View on GitHub' src='/svg/github.svg'
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WatCard Libraries -->
+                    <div class="col l4 m10 offset-m1 s12">
+                        <div class="card teal lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title semibold">WatCard-Android/Java</span>
+                                <p>Standard Java and Android libraries for retrieving UWaterloo meal plan financial data. Compatible
+                                    with Maven and Gradle build tools.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="grey-text text-lighten-3" href="https://github.com/JeffreyCA/watcard-java-api">Java</a>
+                                <a class="grey-text text-lighten-3 right no-margin" href="https://github.com/JeffreyCA/watcard-android">Android</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coming soon... -->
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card black">
+                            <!-- Featured image -->
+                            <div class="card-image">
+                                <img class="materialboxed" src="/img/coming-soon.jpg">
+                            </div>
+                            <!-- Brief summary -->
+                            <div class="card-content">
+                                <span class="card-title white-text semibold"></span>
+                                <p class="white-text"></p>
+                            </div>
+                            <!-- App Store badge -->
+                            <div class="card-action">
+                                <div class="row playstore valign-wrapper">
+                                    <!-- Chrome store -->
+                                    <div class="col l6 m4 s6 no-margin">
+                                        <a href="javascript:void(0)">
+                                            <img class="responsive-img" alt='Coming soon to App Store' src='/svg/appstore.svg' />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="page-footer light-blue darken-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Column -->
+                    <div class="col s12">
+                        <div class="center-align">
+                            <h5 class="white-text">Connect</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icons -->
+                <div class="row">
                     <div class="center-align">
-                        <h5 class="white-text">Connect</h5>
+                        <div class="col l1 offset-l4 m2 offset-m2 s2 offset-s2">
+                            <a class="waves-effect waves-light btn-floating social google tooltipped" data-delay="50" data-tooltip="@gmail.com" href="mailto:jeffreyca16@gmail.com">
+                                <i class="fa fa-google"></i>
+                            </a>
+                        </div>
+
+                        <div class="col l1 m2 s2">
+                            <a class="waves-effect waves-light btn-floating social uwaterloo tooltipped" data-delay="50" data-tooltip="@uwaterloo.ca"
+                                href="mailto:j.chen@uwaterloo.ca">
+                                <i class="material-icons">school</i>
+                            </a>
+                        </div>
+
+                        <div class="col l1 m2 s2">
+                            <a class="waves-effect waves-light btn-floating social github tooltipped" data-delay="50" data-tooltip="GitHub" href="https://github.com/JeffreyCA">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+
+                        <div class="col l1 m2 s2">
+                            <a class="waves-effect waves-light btn-floating social linkedin tooltipped" data-delay="50" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/jeffreyca">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Icons -->
-            <div class="row">
-                <div class="center-align">
-                    <div class="col l1 offset-l4 m2 offset-m2 s2 offset-s2">
-                        <a class="waves-effect waves-light btn-floating social google tooltipped" data-delay="50" data-tooltip="@gmail.com" href="mailto:jeffreyca16@gmail.com">
-                            <i class="fa fa-google"></i></a>
-                    </div>
-
-                    <div class="col l1 m2 s2">
-                        <a class="waves-effect waves-light btn-floating social uwaterloo tooltipped" data-delay="50" data-tooltip="@uwaterloo.ca" href="mailto:j.chen@uwaterloo.ca">
-                            <i class="material-icons">school</i></a>
-                    </div>
-
-                    <div class="col l1 m2 s2">
-                        <a class="waves-effect waves-light btn-floating social github tooltipped" data-delay="50" data-tooltip="GitHub" href="https://github.com/JeffreyCA">
-                            <i class="fa fa-github"></i></a>
-                    </div>
-
-                    <div class="col l1 m2 s2">
-                        <a class="waves-effect waves-light btn-floating social linkedin tooltipped" data-delay="50" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/jeffreyca">
-                            <i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
+            <div class="footer-copyright">
+                <div class="container">© 2018 Jeffrey Chen</div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">© 2018 Jeffrey Chen</div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Import JavaScript resources -->
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/materialize.js"></script>
-    <script type="text/javascript" src="/js/init.js"></script>
-</body>
+        <!-- Import JavaScript resources -->
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/materialize.js"></script>
+        <script type="text/javascript" src="/js/init.js"></script>
+    </body>
 
 </html>
