@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Jeffrey Chen | Home</title>
-        <meta name="description" content="Jeffrey Chen. Third-year Computer Science student at University of Waterloo. Software developer who enjoys making applications for mobile platforms like Android and iOS.">
+        <title>Jeffrey Chen | Guides</title>
+        <meta name="description" content="Jeffrey Chen. Useful how-to guides for previously taken courses.">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import CSS resources -->
+        <link type="text/css" rel="stylesheet" href="/css/cocoen.css" media="screen,projection" />
         <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
         <link type="text/css" rel="stylesheet" href="/css/materialize-social.css" media="screen,projection" />
         <link type="text/css" rel="stylesheet" href="/css/font-awesome.css" media="screen,projection" />
@@ -20,6 +21,7 @@
         <link rel="shortcut icon" href="/img/favicon/favicon.ico">
         <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
         <meta name="theme-color" content="#01579b">
+
     </head>
 
     <body>
@@ -33,7 +35,7 @@
                                 <i class="material-icons">menu</i>
                             </a>
                             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                                <li class="active">
+                                <li>
                                     <a href="/">
                                         <i class="material-icons">home</i>
                                     </a>
@@ -44,7 +46,7 @@
                                 <li>
                                     <a href="/showcase.html">Showcase</a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="/guides.html">Guides</a>
                                 </li>
                             </ul>
@@ -70,8 +72,8 @@
                         </a>
                     </div>
                 </li>
-                <li class="active">
-                    <a href="javascript:void(0)">
+                <li>
+                    <a href="/">
                         <i class="material-icons">home</i>Home</a>
                 </li>
                 <li>
@@ -82,8 +84,8 @@
                     <a class="waves-effect" href="/showcase.html">
                         <i class="material-icons">panorama</i>Showcase</a>
                 </li>
-                <li>
-                    <a class="waves-effect" href="/guides.html">
+                <li class="active">
+                    <a class="waves-effect" href="javascript:void(0)">
                         <i class="material-icons">panorama</i>Guides</a>
                 </li>
                 <li>
@@ -100,119 +102,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
-                        <div class="card-panel blue">
+                        <div class="card-panel green lighten-1">
                             <span class="white-text">
-                                <h4 class="center-align">Welcome!</h4>
-                                <p>My name is Jeffrey and I am a second-year Computer Science student at University of Waterloo.</p>
-
-                                <p>I am a software developer who loves making applications for mobile platforms like Android
-                                    and iOS. Be sure to check out my latest Android app,
-                                    <a href="https://play.google.com/store/apps/details?id=ca.jeffrey.apodgallery" class="orange-text text-lighten-4">APOD Gallery</a>.</p>
-
-                                <p>I am open to new ideas and suggestions for future projects. Feel free to
-                                    <a href="/contact.html" class="orange-text text-lighten-4">contact me</a>!</p>
+                                <h4 class="center-align">Guides</h4>
                             </span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Experience -->
-                <div id="experience">
-                    <!-- Heading Card -->
-                    <div class="row">
-                        <div class="col l8 offset-l2 m10 offset-m1 s12">
-                            <div class="card-panel orange darken-4">
-                                <span class="white-text">
-                                    <h4 class="center-align">Experience</h4>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Experience List -->
-                    <div class="row">
-                        <!-- Comapny details -->
-                        <div class="col l2 offset-l2 m3 offset-m1 s6 offset-s3">
-                            <div class="card hoverable">
-                                <!-- Logo -->
-                                <div class="card-image">
-                                    <img src="/svg/td.svg" class="responsive-img center-align" alt="TD Bank Group Logo">
-                                </div>
-
-                                <!-- Name -->
-                                <div class="card-content">
-                                    <span class="card-title">
-                                        <h5 class="center-align">TD Bank Group</h5>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Job details -->
-                        <div class="col l6 m7 s10 offset-s1">
-                            <div class="card hoverable green" id="easter">
-                                <!-- Title -->
-                                <div class="card-content">
-                                    <span class="card-title white-text">
-                                        <h5 class="no-margin-bottom">Android Application Developer</h5>
-                                        <h6 class="no-margin">
-                                            <i>Channels Technology Solutions Mobile</i>
-                                        </h6>
-                                    </span>
-
-                                    <!-- Bullet points -->
-                                    <span class="white-text">
-                                        <ul class="bullet">
-                                            <li class="bullet">Collaborated in Agile Scrum team to deliver new features, fixes, and improvements
-                                                to
-                                                <a class="yellow-text text-lighten-2" href="https://play.google.com/store/apps/details?id=com.td">TD Canada</a> mobile finance application.</li>
-                                            <li class="bullet">Unified user navigation by adding redesigned swipeable navigation drawer throughout
-                                                entire application.</li>
-                                            <li class="bullet">Implemented custom accessibility support to watchlist view, where users can organize
-                                                and track potential investments.</li>
-                                        </ul>
-                                    </span>
-
-                                    <!-- Date and location chips -->
-                                    <div class="white chip no-margin waves-effect waves-dark black-text">Toronto, ON</div>
-                                    <div class="white chip no-margin waves-effect waves-dark black-text right">Fall 2017</div>
-                                </div>
-                            </div>
-
-                            <!-- 🥚 -->
-                            <div class="egg right">
-                                <img class="droid" width="180px" src="/svg/android.svg"></img>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Skills / Did you know? -->
                 <div class="row">
-                    <div class="col l4 offset-l2 m5 offset-m1 s12">
-                        <div class="card-panel red darken-3">
-                            <span class="white-text">
-                                <h4 class="center-align">Skills</h4>
-                            </span>
-
-                            <div class="center-align">
-                                <div class="chip white waves-effect">Android</div>
-                                <div class="chip white waves-effect">Java</div>
-                                <div class="chip white waves-effect">C/C++</div>
-                                <div class="chip white waves-effect">HTML/CSS</div>
-                                <div class="chip white waves-effect">JavaScript</div>
-                                <div class="chip white waves-effect">Linux</div>
+                    <!-- CS 241 -->
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card grey darken-3">
+                            <!-- Brief summary -->
+                            <div class="card-content">
+                                <span class="card-title white-text semibold">CS 241: Running Student Environment Tools Locally
+                                </span>
+                                <p class="white-text">
+                                    A guide for students taking CS 241 who wish to use the provided student environment tools (
+                                    <code>cs241-binasm, cs241-twoints, cs241-array, etc.</code>) on their local machines.
+                                </p>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col l4 m5 s12">
-                        <div id="diy-card" class="card-panel grey darken-1 waves-effect">
-                            <span class="white-text">
-                                <h4 class="center-align">Did you know?</h4>
-                                <p id="diy-text" class="center-align">This website was created using the
-                                    <a href="http://materializecss.com/" class="pink-text text-lighten-4 disable-click">Materialize</a> framework, which is based on Google's Material Design language.</p>
-                            </span>
+                            <!-- Github badge -->
+                            <div class="card-action">
+                                <a class="grey-text text-lighten-3" href="https://gist.github.com/JeffreyCA/f65969df4f1dc1d9b02d48cd3f074a5c">Github Gist</a>
+                                <a class="grey-text text-lighten-3 right no-margin" href="/guides/cs241-local.html">View guide</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -261,7 +175,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Footer -->
             <div class="footer-copyright">
                 <div class="container">© 2018 Jeffrey Chen</div>
             </div>
