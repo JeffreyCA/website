@@ -9825,14 +9825,31 @@ li.bullet {
 }
 
 .droid {
-    margin-left: 15%; /* margin-left: 15%; */
-    margin-bottom: 70%; /* margin-bottom: 21%; */
-    margin-top: -400%; /* margin-top: -100%; */
+    margin-left: 15%;
+    margin-bottom: 70%;
+    margin-top: -400%;
     -ms-transform: rotate(40deg);
     -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
     transition: all 1s;
     -webkit-transition: all 1s;
+}
+
+#easter:hover~.egg .thinkbox {
+    -ms-transform: translate(100%, 0) rotate(0deg);
+    -webkit-transform: translate(100%, 0) rotate(0deg);
+    transform: translate(100%, 0) rotate(0deg);
+}
+
+.thinkbox {
+    margin-left: 15%;
+    margin-bottom: 70%;
+    margin-top: -400%;
+    -ms-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+    transition: all 0.9s;
+    -webkit-transition: all 0.9s;
 }
 
 .row.playstore {

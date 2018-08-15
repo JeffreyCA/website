@@ -35,7 +35,7 @@ function formatDate(date) {
 
             "Some JavaScript libraries used include <a href=\"https://github.com/koenoe/cocoen/\" class=\"green-text text-lighten-3\" target=\"_blank\">Cocoen</a> (before/after image slider) and <a href=\"https://masonry.desandro.com/\" class=\"pink-text text-lighten-2\">Masonry</a> (grid library).",
 
-            "Have you spotted the 🐰🥚 here yet? There are also some unique features when viewing from a mobile device!"
+            "Try viewing my website from a mobile device!"
         ];
 
         var i = 1;
