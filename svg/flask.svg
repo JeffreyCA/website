@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Flask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 195.2 195.2" style="enable-background:new 0 0 195.2 195.2;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 	.st1{opacity:0.4;fill:#59B4D9;}
-	.st2{display:none;opacity:0.48;fill:#C2E25D;}
-	.st3{display:none;fill:#B8D432;}
-	.st4{display:none;fill:#7FBA00;}
-	.st5{opacity:0.25;fill:#FFFFFF;enable-background:new    ;}
-	.st6{display:none;fill:#59B4D9;}
+	.st2{opacity:0.25;fill:#FFFFFF;enable-background:new    ;}
 </style>
 <polygon class="st0" points="124.8,0 124.8,90.8 130,109.7 166.9,172.6 28.4,172.6 64.3,111.4 70.8,92.3 70.8,0 0,0 0,195.2 
 	195.2,195.2 195.2,0 "/>
 <path class="st1" d="M192.3,174.2L130.3,69V26.3h1.1c7.4,0,13.4-5.9,13.4-13.2S138.9,0,131.5,0H63.8c-7.4,0-13.4,5.9-13.4,13.2
 	s6,13.2,13.4,13.2h1.1V69l-62,105.3c-6.8,11.5-1.2,21,12.4,21H180C193.6,195.2,199.1,185.8,192.3,174.2z"/>
-<circle class="st2" cx="98.9" cy="134.2" r="12.3"/>
-<polygon class="st3" points="54,128.9 28.4,172.4 166.9,172.4 141.3,128.9 "/>
-<circle class="st4" cx="73.3" cy="141.5" r="9.1"/>
-<circle class="st4" cx="114.1" cy="156" r="6"/>
-<circle class="st4" cx="134.7" cy="143.1" r="7.6"/>
-<path class="st5" d="M2.8,174.2L63.6,69V26.3h-1.1c-7.3,0-13.2-5.9-13.2-13.2S55.3,0,62.5,0h28.6v68.6l-32,126.6H15
+<path class="st2" d="M2.8,174.2L63.6,69V26.3h-1.1c-7.3,0-13.2-5.9-13.2-13.2S55.3,0,62.5,0h28.6v68.6l-32,126.6H15
 	C1.6,195.2-3.8,185.8,2.8,174.2z"/>
-<path class="st6" d="M192.3,174.2L130.3,69V26.3h1.1c7.4,0,13.4-5.9,13.4-13.2S138.9,0,131.5,0H63.8c-7.4,0-13.4,5.9-13.4,13.2
-	s6,13.2,13.4,13.2h1.1V69l-62,105.3c-6.8,11.5-1.2,21,12.4,21H180C193.6,195.2,199.1,185.8,192.3,174.2z"/>
 </svg>
