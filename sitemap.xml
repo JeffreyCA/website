@@ -6,27 +6,27 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://jeffreyca.me/</loc>
-  <lastmod>2019-08-13T18:23:06+00:00</lastmod>
+  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://jeffreyca.me/projects</loc>
-  <lastmod>2019-08-13T18:23:06+00:00</lastmod>
+  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://jeffreyca.me/showcase</loc>
-  <lastmod>2019-08-13T18:23:06+00:00</lastmod>
-  <priority>0.75</priority>
+  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://jeffreyca.me/guides</loc>
-  <lastmod>2019-08-13T18:23:06+00:00</lastmod>
-  <priority>0.75</priority>
+  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://jeffreyca.me/guides/cs241-local</loc>
-  <lastmod>2019-08-13T18:26:06+00:00</lastmod>
+  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
   <priority>0.75</priority>
 </url>
 
