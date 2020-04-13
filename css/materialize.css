@@ -5835,7 +5835,6 @@ button.btn-floating {
 .dropdown-content li>a,
 .dropdown-content li>span {
     font-size: 16px;
-    color: #26a69a;
     display: block;
     line-height: 22px;
     padding: 14px 16px;
@@ -10009,6 +10008,10 @@ button.picker__close:focus {
 
 /* Custom Definitions */
 
+.nav-dropdown li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* "Sticky" footers */
 body {
     display: flex;
@@ -10114,6 +10117,10 @@ li.bullet {
 
 .row.playstore {
     margin-bottom: 0;
+}
+
+.raytracer-link {
+    margin-left: 10px;
 }
 
 .no-margin {

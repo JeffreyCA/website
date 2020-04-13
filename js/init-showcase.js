@@ -17,6 +17,14 @@ function formatDate(date) {
             closeOnClick: true
         });
 
+        $('.dropdown-button').dropdown({
+            inDuration: 100,
+            outDuration: 100,
+            belowOrigin: true, // Displays dropdown below the button
+            alignment: 'right' // Displays dropdown with edge aligned to the left of button
+          }
+        );
+
         $('.user-view').click(function () {
             $('.button-collapse').sideNav('hide');
         })

@@ -31,6 +31,14 @@
     <body>
         <header>
             <div class="navbar-fixed">
+                <ul id="dropdown" class="dropdown-content nav-dropdown light-blue darken-4">
+                    <li><a href="/raytracer.html">Raytracer</a></li>
+                    <li><a href="/showcase.html">Art & Models</a></li>
+                </ul>
+                <ul id="dropdown-mobile" class="dropdown-content nav-dropdown">
+                    <li><a href="/raytracer.html">Raytracer</a></li>
+                    <li><a href="/showcase.html">Art & Models</a></li>
+                </ul>
                 <nav class="light-blue darken-4">
                     <div class="container">
                         <div class="nav-wrapper">
@@ -48,7 +56,7 @@
                                     <a href="/projects.html">Projects</a>
                                 </li>
                                 <li>
-                                    <a href="/showcase.html">Showcase</a>
+                                    <a class="dropdown-button" data-activates="dropdown">Showcase<i class="material-icons right no-margin">arrow_drop_down</i></a>
                                 </li>
                                 <li>
                                     <a href="/guides.html">Guides</a>
@@ -77,27 +85,22 @@
                     </div>
                 </li>
                 <li class="active">
-                    <a href="javascript:void(0)">
-                        <i class="material-icons">home</i>Home</a>
+                    <a href="javascript:void(0)"><i class="material-icons">home</i>Home</a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="/projects.html">
-                        <i class="material-icons">work</i>Projects</a>
+                    <a class="waves-effect" href="/projects.html"><i class="material-icons">work</i>Projects</a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="/showcase.html">
-                        <i class="material-icons">panorama</i>Showcase</a>
+                    <a class="waves-effect dropdown-button" data-activates="dropdown-mobile">Showcase<i class="material-icons">panorama</i><i class="material-icons right no-margin">arrow_drop_down</i></a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="/guides.html">
-                        <i class="material-icons">help</i>Guides</a>
+                    <a class="waves-effect" href="/guides.html"><i class="material-icons">help</i>Guides</a>
                 </li>
                 <li>
                     <div class="divider"></div>
                 </li>
                 <li>
-                    <a class="waves-effect" id="about" href="javascript:void(0)">
-                        <i class="material-icons">info</i>About</a>
+                    <a class="waves-effect" id="about" href="javascript:void(0)"><i class="material-icons">info</i>About</a>
                 </li>
             </ul>
         </header>
@@ -111,8 +114,7 @@
                                 <h4 class="center-align">Welcome!</h4>
                                 <p>My name is Jeffrey and I am a fourth-year Computer Science student at University of Waterloo.</p>
 
-                                <p>I am a software developer who loves contributing to open-source projects and making applications for mobile platforms like Android and iOS. Be sure to check out my latest Android app,
-                                    <a href="https://play.google.com/store/apps/details?id=ca.jeffrey.apodgallery" class="orange-text text-lighten-4">APOD Gallery</a>.</p>
+                                <p>I am a software developer who loves to contribute to open-source projects and make interesting applications for web and mobile. My interests lie in app development, machine learning, music, and graphics.
                             </span>
                         </div>
                     </div>
@@ -165,8 +167,7 @@
                                     <!-- Bullet points -->
                                     <span class="white-text">
                                         <ul class="bullet">
-                                            <li class="bullet">Designed and developed insights platform to bring deeper visibility
-                                                into Frame Offline, a virtual feature store that enables AI teams to easily share and consume features for ML models.</li>
+                                            <li class="bullet">Developed insights platform to bring deeper visibility into Frame Offline, a virtual ML feature store that enables teams to easily share and consume features.</li>
                                         </ul>
                                     </span>
 
@@ -327,8 +328,7 @@
                                     <span class="white-text">
                                         <ul class="bullet">
                                             <li class="bullet">Delivered new features, fixes, and improvements
-                                                to
-                                                <a class="yellow-text text-lighten-2" href="https://play.google.com/store/apps/details?id=com.td">TD Canada</a> Android finance application.</li>
+                                                to <a class="yellow-text text-lighten-2" href="https://play.google.com/store/apps/details?id=com.td">TD Canada</a> Android app.</li>
                                         </ul>
                                     </span>
 
@@ -359,13 +359,11 @@
                                 <div class="chip white waves-effect">C#</div>
                                 <div class="chip white waves-effect">Scala</div>
                                 <div class="chip white waves-effect">Python</div>
-                                <div class="chip white waves-effect">C/C++</div>
+                                <div class="chip white waves-effect">C++</div>
                                 <div class="chip white waves-effect">Swift</div>
                                 <div class="chip white waves-effect">JavaScript</div>
-                                <div class="chip white waves-effect">HTML/CSS</div>
-                                <div class="chip white waves-effect">Android</div>
-                                <div class="chip white waves-effect">.NET</div>
                                 <div class="chip white waves-effect">Spark</div>
+                                <div class="chip white waves-effect">HTML/CSS</div>
                             </div>
                         </div>
                     </div>

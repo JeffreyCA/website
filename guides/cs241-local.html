@@ -35,6 +35,14 @@
     <body>
         <header>
             <div class="navbar-fixed">
+                <ul id="dropdown" class="dropdown-content nav-dropdown light-blue darken-4">
+                    <li><a href="/raytracer.html">Raytracer</a></li>
+                    <li><a href="/showcase.html">Art & Models</a></li>
+                </ul>
+                <ul id="dropdown-mobile" class="dropdown-content nav-dropdown">
+                    <li><a href="/raytracer.html">Raytracer</a></li>
+                    <li><a href="/showcase.html">Art & Models</a></li>
+                </ul>
                 <nav class="light-blue darken-4">
                     <div class="container">
                         <div class="nav-wrapper">
@@ -44,15 +52,14 @@
                             </a>
                             <ul id="nav-mobile" class="right hide-on-med-and-down">
                                 <li>
-                                    <a href="/">
-                                        <i class="material-icons">home</i>
+                                    <a href="/"><i class="material-icons">home</i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/projects.html">Projects</a>
                                 </li>
                                 <li>
-                                    <a href="/showcase.html">Showcase</a>
+                                    <a class="dropdown-button" data-activates="dropdown">Showcase<i class="material-icons right no-margin">arrow_drop_down</i></a>
                                 </li>
                                 <li class="active">
                                     <a href="/guides.html">Guides</a>
@@ -81,27 +88,22 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/">
-                        <i class="material-icons">home</i>Home</a>
+                    <a href="/"><i class="material-icons">home</i>Home</a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="/projects.html">
-                        <i class="material-icons">work</i>Projects</a>
+                    <a class="waves-effect" href="/projects.html"><i class="material-icons">work</i>Projects</a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="/showcase.html">
-                        <i class="material-icons">panorama</i>Showcase</a>
+                    <a class="waves-effect dropdown-button" data-activates="dropdown-mobile">Showcase<i class="material-icons">panorama</i><i class="material-icons right no-margin">arrow_drop_down</i></a>
                 </li>
                 <li class="active">
-                    <a class="waves-effect" href="/guides.html">
-                        <i class="material-icons">help</i>Guides</a>
+                    <a class="waves-effect" href="/guides.html"><i class="material-icons">help</i>Guides</a>
                 </li>
                 <li>
                     <div class="divider"></div>
                 </li>
                 <li>
-                    <a class="waves-effect" id="about" href="javascript:void(0)">
-                        <i class="material-icons">info</i>About</a>
+                    <a class="waves-effect" id="about" href="javascript:void(0)"><i class="material-icons">info</i>About</a>
                 </li>
             </ul>
         </header>
