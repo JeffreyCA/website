@@ -10012,6 +10012,13 @@ button.picker__close:focus {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.center-align-img {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* "Sticky" footers */
 body {
     display: flex;

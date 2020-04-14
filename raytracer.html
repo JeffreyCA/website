@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CS 488 Raytracer</title>
+        <meta name="description" content="Raytracer built for CS 488 (Introduction to Computer Graphics).">
+        <!-- Open Graph tags -->
+        <meta property="og:title" content="CS 488 Raytracer" />
+        <meta property="og:description" content="Raytracer built for CS 488 (Introduction to Computer Graphics)." />
+        <meta property="og:url" content="https://jeffreyca.me/raytracer" />
+        <!-- Import Google Icon Font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Import CSS resources -->
+        <link type="text/css" rel="stylesheet" href="/css/cocoen.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="/css/materialize-social.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="/css/font-awesome.css" media="screen,projection" />
+        <!-- Let browser know website is optimized for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Various favicon stuff -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/manifest.json">
+        <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+        <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#01579b">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar-fixed">
+                <ul id="dropdown" class="dropdown-content nav-dropdown light-blue darken-4">
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="javascript:void(0)">Raytracer</a></li>
+                </ul>
+                <ul id="dropdown-mobile" class="dropdown-content nav-dropdown">
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="javascript:void(0)">Raytracer</a></li>
+                </ul>
+                <nav class="light-blue darken-4">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="/" class="brand-logo truncate">Jeffrey Chen</a>
+                            <a href="javascript:void(0)" data-activates="mobile-nav" class="button-collapse">
+                                <i class="material-icons">menu</i>
+                            </a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li>
+                                    <a href="/">
+                                        <i class="material-icons">home</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/projects.html">Projects</a>
+                                </li>
+                                <li class="active">
+                                    <a class="dropdown-button" data-activates="dropdown">Showcase<i class="material-icons right no-margin">arrow_drop_down</i></a>
+                                </li>
+                                <li>
+                                    <a href="/guides.html">Guides</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile Navigation -->
+            <ul class="side-nav" id="mobile-nav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="/img/background.jpg">
+                        </div>
+                        <a href="#!user">
+                            <img class="circle" src="/img/me.jpg">
+                        </a>
+                        <a href="#!name">
+                            <span class="white-text name">Jeffrey C (JeffreyCA)</span>
+                        </a>
+                        <a href="#!email">
+                            <span class="white-text email">jeffreyca16@gmail.com</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="/">
+                        <i class="material-icons">home</i>Home</a>
+                </li>
+                <li>
+                    <a class="waves-effect" href="/projects.html"><i class="material-icons">work</i>Projects</a>
+                </li>
+                <li class="active">
+                    <a class="waves-effect dropdown-button" data-activates="dropdown-mobile">Showcase<i class="material-icons">panorama</i><i class="material-icons right no-margin">arrow_drop_down</i></a>
+                </li>
+                <li>
+                    <a class="waves-effect" href="javascript:void(0)"><i class="material-icons">help</i>Guides</a>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li>
+                    <a class="waves-effect" id="about" href="javascript:void(0)"><i class="material-icons">info</i>About</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card-panel light-blue darken-4">
+                            <span class="white-text">
+                                <h4 class="center-align">Raytracer</h4>
+                                <p>
+                                    For the final project of CS 488 (Introduction to Computer Graphics), I chose to extend the raytacer I had built in Assignment 4 with more advanced raytracing techniques. Unfortunately, the project was cancelled due to the COVID-19 shutdown, but my work on it continued nevertheless. This page demonstrates what I've achieved with my raytracer.
+                                </p>
+                                <p>
+                                    Raytracing is a computer graphics rendering technique for generating photorealistic images. The image is created by firing rays into the scene, which interact with objects in the scene. The rays interact with different surfaces and light sources which determine the final colour values of the pixels in the image.
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Primitives</span>
+                                <p>The raytracer supports plane, sphere, cube, cone, and cylinder primitives.</p>
+                                <div class="card-image">
+                                    <img class="center-align-img" src="img/primitives.jpg" data-caption="Primitives">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Meshes</span>
+                                <p>The raytracer supports triangle meshes via Wavefront OBJ files. In addition to 3D vertex coordinates, OBJ meshes can include texture coordinate indices and vertex normal indices.</p>
+                                <p>The following image features dodecahedron and cow meshes.</p>
+                                <div class="card-image">
+                                    <img class="center-align-img" src="img/macho-cows.jpg" data-caption="Dodecahedron and cow meshes">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Phong shading (normal interpolation)</span>
+                                <p>For meshes with included vertex normals, the raytracer interpolates the intersection normals using barycentric coordinates to give meshes a smooth look.</p>
+                                <br/>
+                                <p>Flat shading on the left, Phong shading on the right.</p>
+                                <div class="row no-margin-bottom">
+                                    <div class="card-image">
+                                        <div class="col l6 m6 s6">
+                                            <img src="img/cow-flat.jpg" data-caption="Cow mesh using flat shading">
+                                        </div>
+                                        <div class="col l6 m6 s6">
+                                            <img src="img/cow-phong.jpg" data-caption="Cow mesh using Phong shading">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Texture mapping</span>
+                                <p>Texture mapping is implemented assigning UV coordinates when a ray intersects objects. Texture mapping works on most primitives as well as meshes with UV mappings. The normalized UV coordinates get mapped to a pixel on the original texture image using nearest neighbour interpolation. Texture mapping supports PNG images as well as primitive textures like checkered and striped patterns.</p>
+                                <br/>
+                                <p>Primitive texture mapping on the left, mesh texture mapping on the right.</p>
+                                <div class="row no-margin-bottom">
+                                    <div class="card-image">
+                                        <div class="col l6 m6 s6">
+                                            <img src="img/wall-ball.jpg" data-caption="Texture mapping in primitives">
+                                        </div>
+                                        <div class="col l6 m6 s6">
+                                            <img src="img/highway.jpg" data-caption="Texture mapping in meshes">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Reflection</span>
+                                <p>The raytracer supports regular and glossy reflection. When a ray hits a reflective object, a secondary ray is fired using the law of reflection. For glossy materials, several secondary rays are fired with some random perturbation and the average result is used. An upper threshold is set to limit the number of rays fired recursively.</p>
+                                <div class="card-image">
+                                    <img class="center-align-img" src="img/reflection.jpg" data-caption="Glossy and regular reflection">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Refraction</span>
+                                <p>The raytracer also supports regular and glossy refraction. When a ray hits a transparent or translucent object, a secondary ray is fired into the material using Snell's law and the material's index of refraction. The Fresnel Effect can be observed on objects that exhibit both reflective and refractive properties. As with reflection, refraction in glossy materials is achieved by firing multiple secondary rays that are randomly perturbed.</p>
+                                <br/>
+                                <p>Regular refraction on the left, glossy refraction on the right.</p>
+                                <div class="row no-margin-bottom">
+                                    <div class="card-image">
+                                        <div class="col l6 m6 s6">
+                                            <img src="img/refraction.jpg" data-caption="Regular refraction">
+                                        </div>
+                                        <div class="col l6 m6 s6">
+                                            <img src="img/glossy-refraction.jpg" data-caption="Glossy refraction">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Adaptive supersampling</span>
+                                <p>Adaptive supersampling is an antialiasing technique to selectively smooth out <i>jaggies</i> in the final image. It is achieved by initially sampling every pixel performed by dividing each pixel into four areas and sampling rays to the centres of those areas. If the resulting colour values differ from the colour of the centre point by more than some threshold, then that area is split into four additional quadrants and further sampling is performed.</p>
+                                <br/>
+                                No supersampling on the left, supersampling on the right, highlighted supersampled points highlighted in red on the bottom.
+                                <div class="row no-margin-bottom">
+                                    <div class="card-image">
+                                        <div class="col l6 m6 s6">
+                                            <img src="img/jagged.jpg" data-caption="No supersampling">
+                                        </div>
+                                        <div class="col l6 m6 s6">
+                                            <img src="img/supersample.jpg" data-caption="Adaptive supersampling">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-margin-bottom">
+                                    <div class="card-image">
+                                        <div class="col offset-l3 l6 offset-m3 m6 offset-s3 s6">
+                                            <img src="img/supersample-red.jpg" data-caption="Pixels with supersampling are highlighted in red">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Animation</span>
+                                <p>Animation is achieved using Lua to render multiple frames and then using <code>FFmpeg</code> to stitch them together into a GIF.</p>
+                                <div class="card-image">
+                                    <img class="center-align-img" src="img/spinning-top.gif" data-caption="Spinning top animation">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Optimization techniques</span>
+                                <p>Several optimization techniques are used to speed up rendering times:</p>
+                                <ol>
+                                    <li><b>Multithreading</b></li>
+                                    <p>The raytracer uses multithreading to split up the work between all of the computer's CPU cores. The number of threads created is equal to the number of CPU cores. To achieve a fairer distribution of work among cores, pixels are assigned to threads in an alternating manner.</p>
+                                    <li><b>Mesh bounding volumes</b></li>
+                                    <li><b>3D grid acceleration</b></li>
+                                    <li><b>Adaptive antialiasing</b></li>
+                                    (Discussed above)
+                                  </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                        <div class="card z-depth-2">
+                            <div class="card-content">
+                                <span class="card-title semibold">Benchmarks</span>
+                                <p>Some rough benchmarks were performed comparing the render times of various combinations of optimization techniques. The test scene used is the following, which contains a total of ___ triangles across ____ meshes.</p>
+                                <div class="row no-margin-bottom">
+                                    <div class="card-image">
+                                        <div class="col l6 offset-l3 m6 offset-m3 s6 offset-s3">
+                                            <img src="img/highway.jpg" data-caption="Texture mapping in primitives">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="page-footer light-blue darken-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Single Column -->
+                    <div class="col s12">
+                        <div class="center-align">
+                            <h5 class="white-text">Connect</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icons -->
+                <div class="row">
+                    <div class="center-align">
+                        <div class="col s2 offset-s3">
+                            <a class="waves-effect waves-light btn-floating social google tooltipped" data-delay="50" data-tooltip="@gmail.com" href="mailto:jeffreyca16@gmail.com">
+                                <i class="fa fa-google"></i>
+                            </a>
+                        </div>
+
+                        <div class="col s2">
+                            <a class="waves-effect waves-light btn-floating social github tooltipped" data-delay="50" data-tooltip="GitHub" href="https://github.com/JeffreyCA">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+
+                        <div class="col s2">
+                            <a class="waves-effect waves-light btn-floating social linkedin tooltipped" data-delay="50" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/jeffreyca">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">© 2020 Jeffrey Chen</div>
+            </div>
+        </footer>
+
+        <!-- Import JavaScript resources -->
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/materialize.js"></script>
+        <script type="text/javascript" src="/js/init.js"></script>
+    </body>
+
+</html>
