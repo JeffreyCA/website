@@ -6,28 +6,33 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://jeffreyca.me/</loc>
-  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
+  <lastmod>2020-04-15T02:05:47+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://jeffreyca.me/projects</loc>
-  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
+  <loc>https://jeffreyca.me/raytracer</loc>
+  <lastmod>2020-04-15T02:05:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://jeffreyca.me/showcase</loc>
-  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
-  <priority>0.60</priority>
+  <loc>https://jeffreyca.me/gallery</loc>
+  <lastmod>2020-04-15T02:05:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://jeffreyca.me/projects</loc>
+  <lastmod>2020-04-15T02:05:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://jeffreyca.me/guides</loc>
-  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
+  <lastmod>2020-04-15T02:05:47+00:00</lastmod>
   <priority>0.60</priority>
 </url>
 <url>
-  <loc>https://jeffreyca.me/guides/cs241-local</loc>
-  <lastmod>2019-12-23T20:52:16+00:00</lastmod>
-  <priority>0.75</priority>
+  <loc>https://jeffreyca.me/cs241-local</loc>
+  <lastmod>2020-04-15T02:05:47+00:00</lastmod>
+  <priority>0.60</priority>
 </url>
 
 </urlset>
