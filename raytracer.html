@@ -11,7 +11,6 @@
         <!-- Import Google Icon Font -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Import CSS resources -->
-        <link type="text/css" rel="stylesheet" href="/css/cocoen.css" media="screen,projection" />
         <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
         <link type="text/css" rel="stylesheet" href="/css/materialize-social.css" media="screen,projection" />
         <link type="text/css" rel="stylesheet" href="/css/font-awesome.css" media="screen,projection" />
@@ -115,10 +114,10 @@
                             <span class="white-text">
                                 <h4 class="center-align">Raytracer</h4>
                                 <p>
-                                    For the final project of CS 488 (Introduction to Computer Graphics), I chose to extend the raytacer I had built in Assignment 4 with more advanced raytracing techniques. Unfortunately, the project was cancelled due to the COVID-19 shutdown, but my work on it continued nevertheless. This page demonstrates what I've achieved with my raytracer.
+                                    Raytracing is a computer graphics rendering technique for generating photorealistic images. The image is created by firing rays into the scene, which interact with objects in the scene. The rays interact with different surfaces and light sources which determine the final colour values of the pixels in the image.
                                 </p>
                                 <p>
-                                    Raytracing is a computer graphics rendering technique for generating photorealistic images. The image is created by firing rays into the scene, which interact with objects in the scene. The rays interact with different surfaces and light sources which determine the final colour values of the pixels in the image.
+                                    For the final project of CS 488 (Introduction to Computer Graphics), I chose to extend the raytacer I had built in Assignment 4 with more advanced raytracing techniques. Unfortunately, the project was cancelled due to the COVID-19 shutdown. I continued to work on it on my own time and this page demonstrates its features.
                                 </p>
                             </span>
                         </div>
@@ -128,10 +127,14 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Primitives</span>
+                                <span class="card-title bold">Primitives</span>
                                 <p>The raytracer supports plane, sphere, cube, cone, and cylinder primitives.</p>
-                                <div class="card-image">
-                                    <img class="center-align-img" src="img/primitives.jpg" data-caption="Primitives">
+                                <div class="row no-margin-bottom">
+                                    <div class="col offset-l3 l6 offset-m3 m6 s12">
+                                        <div class="card-image">
+                                            <img class="center-align-img" src="img/primitives.jpg" data-caption="Primitives">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -141,11 +144,15 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Meshes</span>
+                                <span class="card-title bold">Meshes</span>
                                 <p>The raytracer supports triangle meshes via Wavefront OBJ files. In addition to 3D vertex coordinates, OBJ meshes can include texture coordinate indices and vertex normal indices.</p>
                                 <p>The following image features dodecahedron and cow meshes.</p>
-                                <div class="card-image">
-                                    <img class="center-align-img" src="img/macho-cows.jpg" data-caption="Dodecahedron and cow meshes">
+                                <div class="row no-margin-bottom">
+                                    <div class="col offset-l3 l6 offset-m3 m6 s12">
+                                        <div class="card-image">
+                                            <img class="center-align-img" src="img/macho-cows.jpg" data-caption="Dodecahedron and cow meshes">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +162,7 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Phong shading (normal interpolation)</span>
+                                <span class="card-title bold">Phong shading (normal interpolation)</span>
                                 <p>For meshes with included vertex normals, the raytracer interpolates the intersection normals using barycentric coordinates to give meshes a smooth look.</p>
                                 <br/>
                                 <p>Flat shading on the left, Phong shading on the right.</p>
@@ -177,7 +184,7 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Texture mapping</span>
+                                <span class="card-title bold">Texture mapping</span>
                                 <p>Texture mapping is implemented assigning UV coordinates when a ray intersects objects. Texture mapping works on most primitives as well as meshes with UV mappings. The normalized UV coordinates get mapped to a pixel on the original texture image using nearest neighbour interpolation. Texture mapping supports PNG images as well as primitive textures like checkered and striped patterns.</p>
                                 <br/>
                                 <p>Primitive texture mapping on the left, mesh texture mapping on the right.</p>
@@ -199,10 +206,14 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Reflection</span>
+                                <span class="card-title bold">Reflection</span>
                                 <p>The raytracer supports regular and glossy reflection. When a ray hits a reflective object, a secondary ray is fired using the law of reflection. For glossy materials, several secondary rays are fired with some random perturbation and the average result is used. An upper threshold is set to limit the number of rays fired recursively.</p>
-                                <div class="card-image">
-                                    <img class="center-align-img" src="img/reflection.jpg" data-caption="Glossy and regular reflection">
+                                <div class="row no-margin-bottom">
+                                    <div class="card-image">
+                                        <div class="col offset-l3 l6 offset-m3 m6 s12">
+                                            <img class="center-align-img" src="img/reflection.jpg" data-caption="Glossy and regular reflection">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -212,7 +223,7 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Refraction</span>
+                                <span class="card-title bold">Refraction</span>
                                 <p>The raytracer also supports regular and glossy refraction. When a ray hits a transparent or translucent object, a secondary ray is fired into the material using Snell's law and the material's index of refraction. The Fresnel Effect can be observed on objects that exhibit both reflective and refractive properties. As with reflection, refraction in glossy materials is achieved by firing multiple secondary rays that are randomly perturbed.</p>
                                 <br/>
                                 <p>Regular refraction on the left, glossy refraction on the right.</p>
@@ -234,7 +245,7 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Adaptive supersampling</span>
+                                <span class="card-title bold">Adaptive supersampling</span>
                                 <p>Adaptive supersampling is an antialiasing technique to selectively smooth out <i>jaggies</i> in the final image. It is achieved by initially sampling every pixel performed by dividing each pixel into four areas and sampling rays to the centres of those areas. If the resulting colour values differ from the colour of the centre point by more than some threshold, then that area is split into four additional quadrants and further sampling is performed.</p>
                                 <br/>
                                 No supersampling on the left, supersampling on the right, highlighted supersampled points highlighted in red on the bottom.
@@ -250,7 +261,7 @@
                                 </div>
                                 <div class="row no-margin-bottom">
                                     <div class="card-image">
-                                        <div class="col offset-l3 l6 offset-m3 m6 offset-s3 s6">
+                                        <div class="col offset-l3 l6 offset-m3 m6 s12">
                                             <img src="img/supersample-red.jpg" data-caption="Pixels with supersampling are highlighted in red">
                                         </div>
                                     </div>
@@ -263,10 +274,14 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Animation</span>
-                                <p>Animation is achieved using Lua to render multiple frames and then using <code>FFmpeg</code> to stitch them together into a GIF.</p>
-                                <div class="card-image">
-                                    <img class="center-align-img" src="img/spinning-top.gif" data-caption="Spinning top animation">
+                                <span class="card-title bold">Animation</span>
+                                <p>Animation is achieved by using Lua to render multiple frames and then using <code>FFmpeg</code> to stitch them together into a GIF.</p>
+                                <div class="row no-margin-bottom">
+                                    <div class="card-image">
+                                        <div class="col l6 offset-l3 m6 offset-m3 s12">
+                                            <img class="center-align-img" src="img/spinning-top.gif" data-caption="Spinning top animation">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -276,15 +291,17 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Optimization techniques</span>
+                                <span class="card-title bold">Optimizations</span>
                                 <p>Several optimization techniques are used to speed up rendering times:</p>
                                 <ol>
                                     <li><b>Multithreading</b></li>
                                     <p>The raytracer uses multithreading to split up the work between all of the computer's CPU cores. The number of threads created is equal to the number of CPU cores. To achieve a fairer distribution of work among cores, pixels are assigned to threads in an alternating manner.</p>
                                     <li><b>Mesh bounding volumes</b></li>
+                                    Mesh rendering is accelerated by enclosing every mesh object in a tightly-bound box. Instead of testing for ray-intersection with every triangle in the scene, the raytracer tests against the bounding volume boxes. If the ray intersects with a bounding volume, then it will check for the nearest intersection of all the triangles within the box. Otherwise, all of the triangle belonging to that mesh can be skipped.
                                     <li><b>3D grid acceleration</b></li>
+                                    Mesh rendering is further optimized by dividing the bounding volume boxes into <i>voxels</i>. These voxels store pointers to the triangles of the mesh that are partially or fully inside them. Rather than testing for ray-intersection with every triangle inside the bounding volume, the raytracer only tests against the triangles in the voxels that the ray passes through. This is achieved using a 3D digital differential analyzer algorithm.
                                     <li><b>Adaptive antialiasing</b></li>
-                                    (Discussed above)
+                                    As discussed earlier, a lot of unnecessary supersampling is skipped by selectively choosing which pixels to cast additional rays towards.
                                   </ol>
                             </div>
                         </div>
@@ -294,15 +311,66 @@
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <div class="card z-depth-2">
                             <div class="card-content">
-                                <span class="card-title semibold">Benchmarks</span>
-                                <p>Some rough benchmarks were performed comparing the render times of various combinations of optimization techniques. The test scene used is the following, which contains a total of ___ triangles across ____ meshes.</p>
+                                <span class="card-title bold">Benchmarks</span>
+                                <p>Some crude benchmarks were performed on a test scene consisting of several primitives as well as three meshes totalling 35,126 triangles. The output image has a resolution of 500x500. Supersampling was not used to render the final image. Glossy reflection and refraction used 30 perturbed rays.</p>
                                 <div class="row no-margin-bottom">
                                     <div class="card-image">
-                                        <div class="col l6 offset-l3 m6 offset-m3 s6 offset-s3">
-                                            <img src="img/highway.jpg" data-caption="Texture mapping in primitives">
+                                        <div class="col l6 offset-l3 m6 offset-m3 s12">
+                                            <img src="img/highway-bench.jpg" data-caption="Test scene used for benchmark">
                                         </div>
                                     </div>
                                 </div>
+                                <p>Computer specs: MacBook Pro (Mid 2014), 2.2 GHz Quad-Core Intel Core i7-4770HQ</p>
+                                <br/>
+                                <p>The following table compares the render times of the test scene using different combinations of optimization techniques.</p>
+                                <table class="centered striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Multithreading</th>
+                                            <th>Bounding volumes</th>
+                                            <th>3D grid acceleration</th>
+                                            <th>Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>110m28s</td>
+                                        </tr>
+                                        <tr>
+                                            <td>✓</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>20m4s</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>✓</td>
+                                            <td></td>
+                                            <td>2m50s</td>
+                                        </tr>
+                                        <tr>
+                                            <td>✓</td>
+                                            <td>✓</td>
+                                            <td></td>
+                                            <td>32s</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>✓</td>
+                                            <td>✓</td>
+                                            <td>14.5s</td>
+                                        </tr>
+                                        <tr>
+                                            <td>✓</td>
+                                            <td>✓</td>
+                                            <td>✓</td>
+                                            <td><b>4.1s</b></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
