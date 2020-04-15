@@ -2,16 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Jeffrey Chen | Guides</title>
+        <title>Guides</title>
         <meta name="description" content="Helpful guides for previously taken courses.">
         <!-- Open Graph tags -->
-        <meta property="og:title" content="Jeffrey Chen | Guides" />
+        <meta property="og:title" content="Guides" />
         <meta property="og:description" content="Helpful guides for previously taken courses." />
         <meta property="og:url" content="https://jeffreyca.me/guides" />
         <!-- Import Google Icon Font -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Import CSS resources -->
-        <link type="text/css" rel="stylesheet" href="/css/cocoen.css" media="screen,projection" />
         <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
         <link type="text/css" rel="stylesheet" href="/css/materialize-social.css" media="screen,projection" />
         <link type="text/css" rel="stylesheet" href="/css/font-awesome.css" media="screen,projection" />
@@ -32,6 +31,14 @@
     <body>
         <header>
             <div class="navbar-fixed">
+                <ul id="dropdown" class="dropdown-content nav-dropdown light-blue darken-4">
+                    <li><a href="/raytracer.html">Raytracer</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                </ul>
+                <ul id="dropdown-mobile" class="dropdown-content nav-dropdown">
+                    <li><a href="/raytracer.html">Raytracer</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                </ul>
                 <nav class="light-blue darken-4">
                     <div class="container">
                         <div class="nav-wrapper">
@@ -49,7 +56,7 @@
                                     <a href="/projects.html">Projects</a>
                                 </li>
                                 <li>
-                                    <a href="/showcase.html">Showcase</a>
+                                    <a class="dropdown-button" data-activates="dropdown">Showcase<i class="material-icons right no-margin">arrow_drop_down</i></a>
                                 </li>
                                 <li class="active">
                                     <a href="/guides.html">Guides</a>
@@ -82,23 +89,19 @@
                         <i class="material-icons">home</i>Home</a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="/projects.html">
-                        <i class="material-icons">work</i>Projects</a>
+                    <a class="waves-effect" href="/projects.html"><i class="material-icons">work</i>Projects</a>
                 </li>
                 <li>
-                    <a class="waves-effect" href="/showcase.html">
-                        <i class="material-icons">panorama</i>Showcase</a>
+                    <a class="waves-effect dropdown-button" data-activates="dropdown-mobile">Showcase<i class="material-icons">panorama</i><i class="material-icons right no-margin">arrow_drop_down</i></a>
                 </li>
                 <li class="active">
-                    <a class="waves-effect" href="javascript:void(0)">
-                        <i class="material-icons">help</i>Guides</a>
+                    <a class="waves-effect" href="javascript:void(0)"><i class="material-icons">help</i>Guides</a>
                 </li>
                 <li>
                     <div class="divider"></div>
                 </li>
                 <li>
-                    <a class="waves-effect" id="about" href="javascript:void(0)">
-                        <i class="material-icons">info</i>About</a>
+                    <a class="waves-effect" id="about" href="javascript:void(0)"><i class="material-icons">info</i>About</a>
                 </li>
             </ul>
         </header>
@@ -107,7 +110,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
-                        <div class="card-panel green lighten-1">
+                        <div class="card-panel light-blue darken-4">
                             <span class="white-text">
                                 <h4 class="center-align">Guides</h4>
                             </span>
@@ -120,7 +123,7 @@
                         <div class="card grey darken-3">
                             <div class="card-content">
                                 <span class="card-title semibold">
-                                    <a href="/guides/cs241-local.html">
+                                    <a href="/cs241-local.html">
                                         <div class="white-text">CS 241: Running Student Environment Tools Locally</div>
                                     </a>
                                 </span>
@@ -131,7 +134,7 @@
                             </div>
                             <div class="card-action">
                                 <a class="grey-text text-lighten-3" href="https://gist.github.com/JeffreyCA/f65969df4f1dc1d9b02d48cd3f074a5c">Github Gist</a>
-                                <a class="grey-text text-lighten-3 right no-margin" href="/guides/cs241-local.html">View guide</a>
+                                <a class="grey-text text-lighten-3 right no-margin" href="/cs241-local.html">View guide</a>
                             </div>
                         </div>
                     </div>

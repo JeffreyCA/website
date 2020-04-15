@@ -17,6 +17,14 @@ function formatDate(date) {
             closeOnClick: true
         });
 
+        $('.dropdown-button').dropdown({
+            inDuration: 100,
+            outDuration: 100,
+            belowOrigin: true, // Displays dropdown below the button
+            alignment: 'right' // Displays dropdown with edge aligned to the left of button
+          }
+        );
+
         $('.user-view').click(function () {
             $('.button-collapse').sideNav('hide');
         })
@@ -69,9 +77,9 @@ function formatDate(date) {
                         $("#gallery-info span").text(text);
                     }
 
-                    // Change Showcase description text
+                    // Change Gallery description text
                     if (hash === 'all') {
-                        changeInfo("Welcome to my Showcase! Here you can find digital media works that I created, featuring some 3D print models and images I put together for FINE 130, a digital imaging course that I took in Spring 2017. FINE 130 images are also categorized by course modules. Click through the tabs above to filter by category. Enjoy!");
+                        changeInfo("Welcome to my Gallery! Here you can find digital media works that I created, featuring some 3D print models and images I put together for FINE 130, a digital imaging course that I took in Spring 2017. FINE 130 images are also categorized by course modules. Click through the tabs above to filter by category. Enjoy!");
                     } else if (hash === '3d') {
                         changeInfo("These are some models I designed for 3D printing using CAD software. I also printed them out myself using a CubePro.");
                     } else if (hash === 'fine130') {
