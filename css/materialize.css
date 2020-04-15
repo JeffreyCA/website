@@ -10052,6 +10052,10 @@ main {
     font-weight: 400;
 }
 
+.card-title.bold {
+    font-weight: 500;
+}
+
 .waves-effect.waves-dark .waves-ripple {
     background-color: rgba(0, 0, 0, 0.2);
 }
