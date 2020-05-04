@@ -159,6 +159,7 @@
                             <div class="card-content">
                                 <span class="card-title bold">Meshes</span>
                                 <p>The raytracer supports triangle meshes via Wavefront OBJ files. In addition to 3D vertex coordinates, OBJ meshes can include texture coordinate indices and vertex normal indices.</p>
+                                <br />
                                 <p>The following image features dodecahedron and cow meshes.</p>
                                 <div class="row no-margin-bottom">
                                     <div class="col offset-l3 l6 offset-m3 m6 s12">
@@ -223,7 +224,7 @@
                         <div class="card z-depth-2">
                             <div class="card-content">
                                 <span class="card-title bold">Reflection</span>
-                                <p>The raytracer supports regular and glossy reflection. When a ray hits a reflective object, a secondary ray is fired using the law of reflection. For glossy materials, several secondary rays are fired with some random perturbation and the average result is used. An upper threshold is set to limit the number of rays fired recursively.</p>
+                                <p>The raytracer supports regular and glossy reflection. When a ray hits a reflective object, a secondary ray is fired using the law of reflection. For glossy materials, several secondary rays are fired with some random perturbation and the average result is used. An upper threshold is used to limit the number of recursively-fired rays.</p>
                                 <div class="row no-margin-bottom">
                                     <div class="card-image">
                                         <div class="col offset-l3 l6 offset-m3 m6 s12">
@@ -284,7 +285,7 @@
                                 <span class="card-title bold">Adaptive supersampling</span>
                                 <p>Adaptive supersampling is an antialiasing technique to selectively smooth out <i>jaggies</i> in the final image. It is achieved by initially sampling every pixel performed by dividing each pixel into four areas and sampling rays to the centres of those areas. If the resulting colour values differ from the colour of the centre point by more than some threshold, then that area is split into four additional quadrants and further sampling is performed.</p>
                                 <br/>
-                                No supersampling on the left, supersampling on the right, highlighted supersampled points highlighted in red on the bottom.
+                                No supersampling on the left, supersampling on the right, highlighted supersampled points in red on the bottom.
                                 <div class="row no-margin-bottom">
                                     <div class="card-image">
                                         <div class="col l6 m6 s6">
@@ -312,7 +313,7 @@
                         <div class="card z-depth-2">
                             <div class="card-content">
                                 <span class="card-title bold">Animation</span>
-                                <p>Animation is achieved by using Lua to render multiple frames and then using <code>FFmpeg</code> to stitch them together into a GIF.</p>
+                                <p>Animation is achieved by using Lua to render multiple frames and <code>FFmpeg</code> to stitch them together into a looping GIF.</p>
                                 <div class="row no-margin-bottom">
                                     <div class="card-image">
                                         <div class="col l6 offset-l3 m6 offset-m3 s12">
@@ -335,7 +336,7 @@
                                     <li><b>Multithreading</b></li>
                                     <p>The raytracer uses multithreading to split up the work between all of the computer's CPU cores. The number of threads created is equal to the number of CPU cores. To achieve a fairer distribution of work among cores, pixels are assigned to threads in an alternating manner.</p>
                                     <li><b>Mesh bounding volumes</b></li>
-                                    Mesh rendering is accelerated by enclosing every mesh object in a tightly-bound box. Instead of testing for ray-intersection with every triangle in the scene, the raytracer tests against the bounding volume boxes. If the ray intersects with a bounding volume, then it will check for the nearest intersection of all the triangles within the box. Otherwise, all of the triangle belonging to that mesh can be skipped.
+                                    Mesh rendering is accelerated by enclosing every mesh object in a tightly-bound box. Instead of testing for ray-intersection with every triangle in the scene, the raytracer tests against the bounding volume boxes. If the ray intersects with a bounding volume, then it will check for the nearest intersection of all the triangles within the box. Otherwise, all of the triangles belonging to the mesh will be skipped.
                                     <li><b>3D grid acceleration</b></li>
                                     Mesh rendering is further optimized by dividing the bounding volume boxes into <i>voxels</i>. These voxels store pointers to the triangles of the mesh that are partially or fully inside them. Rather than testing for ray-intersection with every triangle inside the bounding volume, the raytracer only tests against the triangles in the voxels that the ray passes through. This is achieved using a 3D digital differential analyzer algorithm.
                                     <li><b>Adaptive antialiasing</b></li>
@@ -351,7 +352,7 @@
                         <div class="card z-depth-2">
                             <div class="card-content">
                                 <span class="card-title bold">Benchmarks</span>
-                                <p>Some crude benchmarks were performed on a test scene consisting of several primitives as well as two meshes totalling 9,392 triangles. The output image has a resolution of 500x500. Supersampling and depth of field effects were not used to render the final image. Glossy reflection and refraction used 30 perturbed rays.</p>
+                                <p>Some crude benchmarks were performed on a test scene consisting of several primitives as well as two meshes (9,392 triangles in total). The output image has a resolution of 500x500. Supersampling and depth of field effects were not used to render the final image. Glossy reflection and refraction used 30 perturbed rays.</p>
                                 <div class="row no-margin-bottom">
                                     <div class="card-image">
                                         <div class="col l6 offset-l3 m6 offset-m3 s12">
