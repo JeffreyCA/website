@@ -1,3 +1,5 @@
+const LAST_UPDATED = '2021-01-27';
+
 // Convert date to yyyy-mm-dd format
 function formatDate(date) {
     var d = new Date(date),
@@ -30,8 +32,7 @@ function formatDate(date) {
         })
 
         $('#about').click(function () {
-            var formattedDate = formatDate(new Date(document.lastModified));
-            Materialize.toast('Last updated: ' + formattedDate, 2000);
+            Materialize.toast(`Last updated: ${LAST_UPDATED}`, 2000);
             return false;
         });
 
